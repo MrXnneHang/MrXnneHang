@@ -22,6 +22,8 @@
 
   ![Frameworks](https://img.shields.io/badge/Frameworks:-red?style=flat-square)
 
+
+
 [![PyTorch][PyTorchBadge]][PyTorchHome]
 
 
@@ -60,7 +62,9 @@
 [ReactHome]: https://reactjs.org/
 [RXJSBadge]: https://img.shields.io/badge/RXJS-B7178C?logo=ReactiveX&style=flat-square&labelColor=000
 [RXJSHome]: https://rxjs.dev/Py
-[PTorchHome]: https://pytorch.org
+
+[PyTorchHome]:https://pytorch.org
+
 [PyTorchBadge]: https://img.shields.io/badge/PyTorch-EE4C2C?logo=PyTorch&style=flat-square&labelColor=000
 [PythonBadge]: https://img.shields.io/badge/Python-3776AB?logo=Python&style=flat-square&labelColor=000
 [PythonHome]: https://www.python.org
