@@ -18,9 +18,13 @@
 
 [![Python][PythonBadge]][PythonHome]
 
+
+
   ![Frameworks](https://img.shields.io/badge/Frameworks:-red?style=flat-square)
 
 [![PyTorch][PyTorchBadge]][PyTorchHome]
+
+
 
   ![Study](https://img.shields.io/badge/Study:-red?style=flat-square)
 
