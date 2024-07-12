@@ -11,22 +11,19 @@
 
 ---
 
-<div align="![Languages](https://img.shields.io/badge/Languages:-red?style=flat-square)
+<div align="center">
 
-
-​    ![Languages](https://img.shields.io/badge/Languages:-red?style=flat-square)
-
-[![Python][PythonBadge]][PythonHome]
-
+  ![Languages](https://img.shields.io/badge/Languages:-red?style=flat-square)
+  [![Python][PythonBadge]][PythonHome]
   ![Frameworks](https://img.shields.io/badge/Frameworks:-red?style=flat-square)
-
-[![PyTorch][PyTorchBadge]][PyTorchHome]
-
+  [![PyTorch][PyTorchBadge]][PyTorchHome]
+  
   ![Study](https://img.shields.io/badge/Study:-red?style=flat-square)
-
-[![Node][NodejsBadge]][NodejsHome]	[![Vuejs][VuejsBadge]][VuejsHome]
+  [![Node][NodejsBadge]][NodejsHome]
+  [![Vuejs][VuejsBadge]][VuejsHome]
 
 </div>
+
 
 [TypeScriptBadge]: https://img.shields.io/badge/TypeScript-3178C6?logo=TypeScript&style=flat-square&labelColor=000
 [TypeScriptHome]: https://www.typescriptlang.org
@@ -60,7 +57,7 @@
 [PythonHome]: https://www.python.org
 
 
-  
+
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MrXnneHang/MrXnneHang/output/github-contribution-grid-snake-dark.svg">
