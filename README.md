@@ -14,11 +14,17 @@
 <div align="![Languages](https://img.shields.io/badge/Languages:-red?style=flat-square)
 
 
-​    ![Languages](https://img.shields.io/badge/Languages:-red?style=flat-square)[![Python][PythonBadge]][PythonHome]
+​    ![Languages](https://img.shields.io/badge/Languages:-red?style=flat-square)
 
-  ![Frameworks](https://img.shields.io/badge/Frameworks:-red?style=flat-square)[![PyTorch][PyTorchBadge]][PyTorchHome]
+[![Python][PythonBadge]][PythonHome]
 
-  ![Study](https://img.shields.io/badge/Study:-red?style=flat-square)[![Node][NodejsBadge]][NodejsHome][![Vuejs][VuejsBadge]][VuejsHome]
+  ![Frameworks](https://img.shields.io/badge/Frameworks:-red?style=flat-square)
+
+[![PyTorch][PyTorchBadge]][PyTorchHome]
+
+  ![Study](https://img.shields.io/badge/Study:-red?style=flat-square)
+
+[![Node][NodejsBadge]][NodejsHome]	[![Vuejs][VuejsBadge]][VuejsHome]
 
 </div>
 
