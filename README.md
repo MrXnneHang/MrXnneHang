@@ -14,25 +14,11 @@
 <div align="![Languages](https://img.shields.io/badge/Languages:-red?style=flat-square)
 
 
-  ![Env](https://img.shields.io/badge/Env:-red?style=flat-square)
+​    ![Languages](https://img.shields.io/badge/Languages:-red?style=flat-square)[![Python][PythonBadge]][PythonHome]
 
-[![Python][PythonBadge]][PythonHome]
+  ![Frameworks](https://img.shields.io/badge/Frameworks:-red?style=flat-square)[![PyTorch][PyTorchBadge]][PyTorchHome]
 
-
-
-  ![Frameworks](https://img.shields.io/badge/Frameworks:-red?style=flat-square)
-
-
-
-[![PyTorch][PyTorchBadge]][PyTorchHome]
-
-
-
-  ![Study](https://img.shields.io/badge/Study:-red?style=flat-square)
-
-[![Node][NodejsBadge]][NodejsHome]
-
-  [![Vuejs][VuejsBadge]][VuejsHome]
+  ![Study](https://img.shields.io/badge/Study:-red?style=flat-square)[![Node][NodejsBadge]][NodejsHome][![Vuejs][VuejsBadge]][VuejsHome]
 
 </div>
 
@@ -62,9 +48,7 @@
 [ReactHome]: https://reactjs.org/
 [RXJSBadge]: https://img.shields.io/badge/RXJS-B7178C?logo=ReactiveX&style=flat-square&labelColor=000
 [RXJSHome]: https://rxjs.dev/Py
-
 [PyTorchHome]:https://pytorch.org
-
 [PyTorchBadge]: https://img.shields.io/badge/PyTorch-EE4C2C?logo=PyTorch&style=flat-square&labelColor=000
 [PythonBadge]: https://img.shields.io/badge/Python-3776AB?logo=Python&style=flat-square&labelColor=000
 [PythonHome]: https://www.python.org
