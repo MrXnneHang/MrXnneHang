@@ -7,7 +7,7 @@
 ---
 
 - [XnneHang\'s Blog](http://xnnehang.top/home)
-- 他日广寒仙界会,一声道友尽沧桑。
+- 放暑假ing...
 
 ---
 
