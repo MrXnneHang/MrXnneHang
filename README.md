@@ -18,8 +18,8 @@
   ![Frameworks](https://img.shields.io/badge/Frameworks:-red?style=flat-square) 
   [![PyTorch][PyTorchBadge]][PyTorchHome] [![Qt Badge][QtBadge]][QtHome]    
     
-  ![Study](https://img.shields.io/badge/Study:-red?style=flat-square)    
-  [![Node][NodejsBadge]][NodejsHome]   
+  ![Study](https://img.shields.io/badge/Study:-red?style=flat-square) 
+  [![Node][NodejsBadge]][NodejsHome] 
   [![Vuejs][VuejsBadge]][VuejsHome] 
 
 </div>
