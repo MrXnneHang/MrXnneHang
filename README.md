@@ -15,19 +15,19 @@
 
   ![Languages](https://img.shields.io/badge/Languages:-red?style=flat-square)
   [![Python][PythonBadge]][PythonHome]
-  ![Frameworks](https://img.shields.io/badge/Frameworks:-red?style=flat-square) 
+  ![Frameworks](https://img.shields.io/badge/Frameworks:-red?style=flat-square)  
   [![PyTorch][PyTorchBadge]][PyTorchHome]
-  [![Qt Badge][QtBadge]][QtHome] 
-  ![Study](https://img.shields.io/badge/Study:-red?style=flat-square) 
-  [![Node][NodejsBadge]][NodejsHome] 
-  [![Vuejs][VuejsBadge]][VuejsHome]
+  [![Qt Badge][QtBadge]] 
+  ![Study](https://img.shields.io/badge/Study:-red?style=flat-square)  
+  [![Node][NodejsBadge]][NodejsHome]  
+  [![Vuejs][VuejsBadge]][VuejsHome] 
 
 </div>
 
-[QtBadge]: https://img.shields.io/badge/Qt-41CD52?logo=Qt&style=flat-square&labelColor=000  
+[QtBadge]: https://img.shields.io/badge/Qt-41CD52?style=flat-square&labelColor=000&logo=qt 
 [QtHome]: https://www.qt.io
 [TypeScriptBadge]: https://img.shields.io/badge/TypeScript-3178C6?logo=TypeScript&style=flat-square&labelColor=000
-[TypeScriptHome]: https://www.typescriptlang.org 
+[TypeScriptHome]: https://www.typescriptlang.org  
 [JavaScriptBadge]: https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&style=flat-square&labelColor=000 
 [JavaScriptHome]: https://tc39.es/ecma262 
 [NodejsBadge]: https://img.shields.io/badge/Node.js-339933?logo=Node.js&style=flat-square&labelColor=000
