@@ -6,7 +6,7 @@
 
 ---
 
-- [XnneHang\'s Blog](http://xnnehang.top/home)
+- [XnneHang\'s Blog](http://xnnehang.top/home) 
 - 放暑假ing...
 
 ---
@@ -21,11 +21,11 @@
   ![Study](https://img.shields.io/badge/Study:-red?style=flat-square) 
   [![Node][NodejsBadge]][NodejsHome] 
   [![Vuejs][VuejsBadge]][VuejsHome]  
-  [![wakatime](https://wakatime.com/badge/user/3d3aa220-8292-46cc-b64f-4c85ccae6b94.svg)](https://wakatime.com/@3d3aa220-8292-46cc-b64f-4c85ccae6b94) from 24.7.22  
+
 
 </div>
 
-[QtBadge]: https://img.shields.io/badge/Qt-41CD52?style=flat-square&labelColor=000&logo=qt 
+[QtBadge]: https://img.shields.io/badge/Qt-41CD52?style=flat-square&labelColor=000&logo=qt  
 [QtHome]: https://www.qt.io
 [TypeScriptBadge]: https://img.shields.io/badge/TypeScript-3178C6?logo=TypeScript&style=flat-square&labelColor=000
 [TypeScriptHome]: https://www.typescriptlang.org  
