@@ -13,14 +13,15 @@
 
 <div align="center">
 
-  ![Languages](https://img.shields.io/badge/Languages:-red?style=flat-square)
+  ![Languages](https://img.shields.io/badge/Languages:-red?style=flat-square) 
   [![Python][PythonBadge]][PythonHome]
   ![Frameworks](https://img.shields.io/badge/Frameworks:-red?style=flat-square) 
   [![PyTorch][PyTorchBadge]][PyTorchHome] [![Qt Badge][QtBadge]][QtHome]    
     
   ![Study](https://img.shields.io/badge/Study:-red?style=flat-square) 
   [![Node][NodejsBadge]][NodejsHome] 
-  [![Vuejs][VuejsBadge]][VuejsHome] 
+  [![Vuejs][VuejsBadge]][VuejsHome]  
+  [![wakatime](https://wakatime.com/badge/user/3d3aa220-8292-46cc-b64f-4c85ccae6b94.svg)](https://wakatime.com/@3d3aa220-8292-46cc-b64f-4c85ccae6b94) from 24.7.22  
 
 </div>
 
