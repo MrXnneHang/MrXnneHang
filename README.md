@@ -1,5 +1,5 @@
-<a href="https://github.com/MrXnneHang">
-  <img align="right" src="http://github-readme-streak-stats.herokuapp.com?user=MrXnneHang&mode=weekly" /> 
+<a href="https://github.com/MrXnneHang"> 
+  <img align="right" src="http://github-readme-streak-stats.herokuapp.com?user=MrXnneHang&mode=weekly" />  
 </a>
 
 # Hi 👋
@@ -12,7 +12,7 @@
 ---
 
 <div align="center">
-<script src="https://gist.github.com/MrXnneHang/4a0ea241100d9eaec6508e03cf7c0e9c.js"></script>   
+  <script src="https://gist.github.com/MrXnneHang/4a0ea241100d9eaec6508e03cf7c0e9c.js"></script>  
   
   ![Languages](https://img.shields.io/badge/Languages:-red?style=flat-square) 
   [![Python][PythonBadge]][PythonHome]
