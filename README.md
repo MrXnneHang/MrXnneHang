@@ -6,13 +6,13 @@
 
 ---
 
-- [XnneHang\'s Blog](http://xnnehang.top/home) 
+- [XnneHang\'s Blog](http://xnnehang.top/home)  
 - 放暑假ing...
 
 ---
 
 <div align="center">
-
+<script src="https://gist.github.com/MrXnneHang/4a0ea241100d9eaec6508e03cf7c0e9c.js"></script> 
   ![Languages](https://img.shields.io/badge/Languages:-red?style=flat-square) 
   [![Python][PythonBadge]][PythonHome]
   ![Frameworks](https://img.shields.io/badge/Frameworks:-red?style=flat-square)  
@@ -38,7 +38,7 @@
 [VisualStudioCodeHome]: https://code.visualstudio.com/
 [NeoVimBadge]: https://img.shields.io/badge/NeoVim-57A143?logo=neovim&style=flat-square&labelColor=000
 [NeoVimHome]: https://neovim.io/
-[macOSBadge]: https://img.shields.io/badge/macOS-000?logo=macOS&style=flat-square&labelColor=000
+[macOSBadge]: https://img.shields.io/badge/macOS-000?logo=macOS&style=flat-square&labelColor=000 
 [macOSHome]: https://www.apple.com/macos
 [VuejsBadge]: https://img.shields.io/badge/Vue.js-4FC08D?logo=vue.js&style=flat-square&labelColor=000&link=https://vuejs.org 
 [VuejsHome]: https://vuejs.org/
