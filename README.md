@@ -8,7 +8,7 @@ Hi there 👋 I'm an junior student majoring in AI at Xiamen University of Techn
 ---
 
 - [XnneHang\'s Blog](http://xnnehang.top/home)  
-- 放暑假ing...
+- During Summer-Holiday
 
 ---
 
