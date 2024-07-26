@@ -3,6 +3,7 @@
 </a>
 
 # Hi 👋
+Hi there 👋 I'm an junior student majoring in AI at Xiamen University of Technology , diving into Neural Networks and LLM, CV.  
 
 ---
 
