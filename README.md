@@ -1,10 +1,10 @@
 <a href="https://github.com/MrXnneHang"> 
-  <img align="right" src="http://github-readme-streak-stats.herokuapp.com?user=MrXnneHang&mode=weekly" />  
+  <img align="right" src="http://github-readme-streak-stats.herokuapp.com?user=MrXnneHang&mode=weekly" />    
 </a>
 
   
 # Hi 👋
-Hi there 👋 I'm an 	sophomore student majoring in AI at Xiamen University of Technology , diving into Neural Networks and LLM, CV.   
+Hi there 👋 I'm an 	junior student majoring in AI at Xiamen University of Technology , diving into Neural Networks and LLM, CV.     
 
 ---
 
