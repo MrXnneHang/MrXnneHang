@@ -4,25 +4,33 @@
 
   
 # Hi 👋
-Hi there 👋 I'm an 	junior student majoring in AI at Xiamen University of Technology , diving into Neural Networks and LLM, CV.       
+Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Technology, diving into Neural Networks and LLM, CV.       
 
 ---
 
-- [XnneHang\'s Blog](http://xnnehang.top/home)  
-- junior student  
+- [XnneHang's Blog](http://xnnehang.top/home)  
+- Junior student  
 
 ---
 
-<div align="center">
+<div align="left">
   
   ![Languages](https://img.shields.io/badge/Languages:-red?style=flat-square) 
   [![Python][PythonBadge]][PythonHome]
+  
   ![Frameworks](https://img.shields.io/badge/Frameworks:-red?style=flat-square)  
-  [![PyTorch][PyTorchBadge]][PyTorchHome] [![Qt Badge][QtBadge]][QtHome]    
-    
+  [![PyTorch][PyTorchBadge]][PyTorchHome] 
+  [![Qt Badge][QtBadge]][QtHome]    
+
   ![Study](https://img.shields.io/badge/Study:-red?style=flat-square) 
   [![Node][NodejsBadge]][NodejsHome]  
-  [![Vuejs][VuejsBadge]][VuejsHome]  
+  [![Vuejs][VuejsBadge]][VuejsHome]
+  ![C++](https://img.shields.io/badge/C++-00599C?logo=c%2B%2B&style=flat-square&labelColor=000)
+
+  ![OS](https://img.shields.io/badge/OS:-red?style=flat-square) 
+  ![Deepin](https://img.shields.io/badge/Deepin-007CFF?logo=Deepin&style=flat-square&labelColor=000)
+  ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?logo=Ubuntu&style=flat-square&labelColor=000)
+  ![CentOS](https://img.shields.io/badge/CentOS-262577?logo=CentOS&style=flat-square&labelColor=000)
 
 </div>
 
@@ -58,9 +66,6 @@ Hi there 👋 I'm an 	junior student majoring in AI at Xiamen University of Tech
 [PyTorchBadge]: https://img.shields.io/badge/PyTorch-EE4C2C?logo=PyTorch&style=flat-square&labelColor=000
 [PythonBadge]: https://img.shields.io/badge/Python-3776AB?logo=Python&style=flat-square&labelColor=000
 [PythonHome]: https://www.python.org
-
-
-
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MrXnneHang/MrXnneHang/output/github-contribution-grid-snake-dark.svg">
