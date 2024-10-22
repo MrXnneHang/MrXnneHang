@@ -9,66 +9,45 @@ Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Techno
 ---
 
 - [XnneHang's Blog](http://xnnehang.top/home)  
-- Junior student  
+- Junior student
+- I like open source and all interesting things and want to try to do it.
+- I want to be an interesting person and create something that can be remembered by others.
 
 ---
 
 <div align="left">
   
-  ![Languages](https://img.shields.io/badge/Languages:-red?style=flat-square) 
-  [![Python][PythonBadge]][PythonHome]
+  **Language**:<br>
+  <a href="https://www.python.org/" target="_blank"><code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="python" /></code></a>
   
-  ![Frameworks](https://img.shields.io/badge/Frameworks:-red?style=flat-square)  
-  [![PyTorch][PyTorchBadge]][PyTorchHome] 
-  [![Qt Badge][QtBadge]][QtHome]    
+  **Frame Work**:<br>
+  <a href="https://pytorch.org/" target="_blank"><code><img height="20" src="https://raw.githubusercontent.com/pytorch/pytorch/master/docs/source/_static/img/pytorch-logo-dark.png" alt="pytorch" /></code></a>
+  <a href="https://www.qt.io/" target="_blank"><code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt" /></code></a>  
+  
+  **Study**:<br>
+  <a href="https://vuejs.org/" target="_blank"><code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="Vue.js" /></code></a>
+  <a href="https://isocpp.org/" target="_blank"><code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++" /></code></a>
 
-  ![Study](https://img.shields.io/badge/Study:-red?style=flat-square) 
-  [![Node][NodejsBadge]][NodejsHome]  
-  [![Vuejs][VuejsBadge]][VuejsHome]
-  ![C++](https://img.shields.io/badge/C++-00599C?logo=c%2B%2B&style=flat-square&labelColor=000)
+  **OS**:<br>
+  <a href="https://www.deepin.org/en/" target="_blank"><code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Deepin_logo.svg" alt="Deepin" /></code></a>
+  <a href="https://ubuntu.com/" target="_blank"><code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo-ubuntu_cof-orange-hex.svg" alt="Ubuntu" /></code></a>
+  <a href="https://www.centos.org/" target="_blank"><code><img height="20" src="https://www.svgrepo.com/show/349314/centos.svg" alt="CentOS" /></code></a>
 
-  ![OS](https://img.shields.io/badge/OS:-red?style=flat-square) 
-  ![Deepin](https://img.shields.io/badge/Deepin-007CFF?logo=Deepin&style=flat-square&labelColor=000)
-  ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?logo=Ubuntu&style=flat-square&labelColor=000)
-  ![CentOS](https://img.shields.io/badge/CentOS-262577?logo=CentOS&style=flat-square&labelColor=000)
+  **Interested**:<br>
+  <a href="https://www.blender.org/" target="_blank"><code><img height="20" src="https://simpleicons.org/icons/blender.svg" alt="blender" /></code></a>
 
-</div>
 
-[QtBadge]: https://img.shields.io/badge/Qt-41CD52?style=flat-square&labelColor=000&logo=qt  
-[QtHome]: https://www.qt.io
-[TypeScriptBadge]: https://img.shields.io/badge/TypeScript-3178C6?logo=TypeScript&style=flat-square&labelColor=000
-[TypeScriptHome]: https://www.typescriptlang.org  
-[JavaScriptBadge]: https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&style=flat-square&labelColor=000  
-[JavaScriptHome]: https://tc39.es/ecma262  
-[NodejsBadge]: https://img.shields.io/badge/Node.js-339933?logo=Node.js&style=flat-square&labelColor=000
-[NodejsHome]: https://nodejs.org
-[RustBadge]: https://img.shields.io/badge/Rust-fff?logo=Rust&style=flat-square&labelColor=000 
-[RustHome]: https://www.rust-lang.org/
-[VisualStudioCodeBadge]: https://img.shields.io/badge/VSCodeVim-007ACC?logo=VisualStudioCode&style=flat-square&labelColor=000
-[VisualStudioCodeHome]: https://code.visualstudio.com/
-[NeoVimBadge]: https://img.shields.io/badge/NeoVim-57A143?logo=neovim&style=flat-square&labelColor=000
-[NeoVimHome]: https://neovim.io/
-[macOSBadge]: https://img.shields.io/badge/macOS-000?logo=macOS&style=flat-square&labelColor=000 
-[macOSHome]: https://www.apple.com/macos
-[VuejsBadge]: https://img.shields.io/badge/Vue.js-4FC08D?logo=vue.js&style=flat-square&labelColor=000&link=https://vuejs.org 
-[VuejsHome]: https://vuejs.org/
-[ViteBadge]: https://img.shields.io/badge/Vite-646CFF?logo=vite&style=flat-square&labelColor=000
-[ViteHome]: https://vitejs.dev/
-[PrismaBadge]: https://img.shields.io/badge/Prisma-2D3748?logo=Prisma&style=flat-square&labelColor=000
-[PrismaHome]: https://www.prisma.io/
-[AntDesignBadge]: https://img.shields.io/badge/AntDesign-0170FE?logo=antdesign&style=flat-square&labelColor=000
-[AntDesignHome]: https://ant.design/
-[ReactBadge]: https://img.shields.io/badge/React-61DAFB?logo=React&style=flat-square&labelColor=000
-[ReactHome]: https://reactjs.org/
-[RXJSBadge]: https://img.shields.io/badge/RXJS-B7178C?logo=ReactiveX&style=flat-square&labelColor=000
-[RXJSHome]: https://rxjs.dev/Py
-[PyTorchHome]:https://pytorch.org
-[PyTorchBadge]: https://img.shields.io/badge/PyTorch-EE4C2C?logo=PyTorch&style=flat-square&labelColor=000
-[PythonBadge]: https://img.shields.io/badge/Python-3776AB?logo=Python&style=flat-square&labelColor=000
-[PythonHome]: https://www.python.org
+<div align="left">
+
+
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MrXnneHang/MrXnneHang/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MrXnneHang/MrXnneHang/output/github-contribution-grid-snake.svg">
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/MrXnneHang/MrXnneHang/output/github-contribution-grid-snake.svg">
 </picture>
+
+
+
+
+
