@@ -1,5 +1,5 @@
 <a href="https://github.com/MrXnneHang"> 
-  <img align="right" src="http://github-readme-streak-stats.herokuapp.com?user=MrXnneHang&mode=weekly" />      
+  <img align="right" src="http://github-readme-streak-stats.herokuapp.com?user=MrXnneHang&mode=weekly" />        
 </a>
 
   
@@ -38,13 +38,19 @@ Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Techno
   <a href="https://www.blender.org/" target="_blank"><code><img height="20" src="https://simpleicons.org/icons/blender.svg" alt="blender" /></code></a>
 
 
-<div align="left">
+<div align="left">  
 
+---
+
+## Blog List:
+
+- [开源仓库 Commit 规范 | 让 Commit Message 更可爱](https://xnnehang.top/blog/158)  
+- [Deepin 使用 docker 编译 paddlepaddle](https://xnnehang.top/blog/159)
 
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MrXnneHang/MrXnneHang/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MrXnneHang/MrXnneHang/output/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MrXnneHang/MrXnneHang/output/github-contribution-grid-snake.svg">  
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/MrXnneHang/MrXnneHang/output/github-contribution-grid-snake.svg">
 </picture>
 
