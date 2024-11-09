@@ -54,6 +54,9 @@ Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Techno
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/MrXnneHang/MrXnneHang/output/github-contribution-grid-snake.svg">
 </picture>
 
+<br>
+<br>
+
 <!--START_SECTION:waka-->
 
 ```txt
