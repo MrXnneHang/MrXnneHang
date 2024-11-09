@@ -10,15 +10,15 @@ Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Techno
 
 - [XnneHang's Blog](http://xnnehang.top/home)  
 - Junior student
-- I love reading📚, writing✏️.It's my life. 
+- I love reading📚, writing✏️.It's my life.   
 - I like open source and all interesting things and want to try to do it.  
-- I want to be an interesting person and create something that can be remembered by others.
+- I want to be an interesting person and create something that can be remembered by others.  
 
 ---
 
 <div align="left">
   
-  **Language**:<br>
+  **Language**:<br>  
   <a href="https://www.python.org/" target="_blank"><code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="python" /></code></a>
   
   **Frame Work**:<br>
@@ -26,7 +26,7 @@ Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Techno
   <a href="https://www.qt.io/" target="_blank"><code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt" /></code></a>    
   
   **Study**:<br>
-  <a href="https://vuejs.org/" target="_blank"><code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="Vue.js" /></code></a>
+  <a href="https://vuejs.org/" target="_blank"><code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="Vue.js" /></code></a>  
   <a href="https://isocpp.org/" target="_blank"><code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++" /></code></a>
 
   **OS**:<br>
@@ -47,18 +47,6 @@ Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Techno
 - [开源仓库 Commit 规范 | 让 Commit Message 更可爱](https://xnnehang.top/blog/158)  
 - [Deepin 使用 docker 编译 paddlepaddle](https://xnnehang.top/blog/159)
 
-<!--START_SECTION:waka-->
-
-```txt
-Python             13 hrs 11 mins  ████████████▓░░░░░░░░░░░░   50.15 %
-Markdown           9 hrs 33 mins   █████████░░░░░░░░░░░░░░░░   36.33 %
-YAML               1 hr 7 mins     █░░░░░░░░░░░░░░░░░░░░░░░░   04.26 %
-reStructuredText   58 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   03.72 %
-C++                54 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   03.44 %
-```
-
-<!--END_SECTION:waka-->
-
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MrXnneHang/MrXnneHang/output/github-contribution-grid-snake-dark.svg">
@@ -66,6 +54,17 @@ C++                54 mins         █░░░░░░░░░░░░░░
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/MrXnneHang/MrXnneHang/output/github-contribution-grid-snake.svg">
 </picture>
 
+<!--START_SECTION:waka-->
+
+```txt
+Python             13 hrs 11 mins  ████████████▓░░░░░░░░░░░░   50.15 %
+Markdown           9 hrs 33 mins   █████████░░░░░░░░░░░░░░░░   36.33 %
+YAML               1 hr 7 mins     █░░░░░░░░░░░░░░░░░░░░░░░░   04.26 %
+reStructuredText   58 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   03.72 %
+C++                54 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   03.44 %  
+```
+
+<!--END_SECTION:waka-->
 
 
 
