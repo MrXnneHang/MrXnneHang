@@ -23,7 +23,7 @@ Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Techno
   
   **Frame Work**:<br>
   <a href="https://pytorch.org/" target="_blank"><code><img height="20" src="https://raw.githubusercontent.com/pytorch/pytorch/master/docs/source/_static/img/pytorch-logo-dark.png" alt="pytorch" /></code></a>
-  <a href="https://www.qt.io/" target="_blank"><code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt" /></code></a>  
+  <a href="https://www.qt.io/" target="_blank"><code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt" /></code></a>    
   
   **Study**:<br>
   <a href="https://vuejs.org/" target="_blank"><code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="Vue.js" /></code></a>
@@ -46,6 +46,10 @@ Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Techno
 
 - [开源仓库 Commit 规范 | 让 Commit Message 更可爱](https://xnnehang.top/blog/158)  
 - [Deepin 使用 docker 编译 paddlepaddle](https://xnnehang.top/blog/159)
+
+<!--START_SECTION:waka-->
+
+<!--END_SECTION:waka-->
 
 
 <picture>
