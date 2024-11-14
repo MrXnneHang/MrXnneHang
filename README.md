@@ -16,10 +16,10 @@ Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Techno
 
 ---
 
-<div align="left">
+<div align="left">  
   
   **Language**:<br>  
-  <a href="https://www.python.org/" target="_blank"><code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="python" /></code></a>
+  <a href="https://www.python.org/" target="_blank"><code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="python" /></code></a>  
   
   **Frame Work**:<br>
   <a href="https://pytorch.org/" target="_blank"><code><img height="20" src="https://raw.githubusercontent.com/pytorch/pytorch/master/docs/source/_static/img/pytorch-logo-dark.png" alt="pytorch" /></code></a>
@@ -48,11 +48,9 @@ Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Techno
 - [Deepin 使用 docker 编译 paddlepaddle](https://xnnehang.top/blog/159)
 
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MrXnneHang/MrXnneHang/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MrXnneHang/MrXnneHang/output/github-contribution-grid-snake.svg">  
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/MrXnneHang/MrXnneHang/output/github-contribution-grid-snake.svg">
-</picture>
+<p align="center">
+  <a href="https://open.spotify.com/user/315wgpybdi5ixaz3zlcnjmtcflyy" target="_blank"><img src="https://now-playing-on-spotify.vercel.app/api/spotify?background_color=42f5b011&border_color=00000000" alt="Spotify Now Playing" width="350"/></a>
+</p>
 
 <br>
 <br>
