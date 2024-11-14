@@ -22,7 +22,7 @@ Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Techno
   <a href="https://www.python.org/" target="_blank"><code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="python" /></code></a>  
   
   **Frame Work**:<br>  
-  <a href="https://pytorch.org/" target="_blank"><code><img height="20" src="https://raw.githubusercontent.com/pytorch/pytorch/master/docs/source/_static/img/pytorch-logo-dark.png" alt="pytorch" /></code></a>
+  <a href="https://pytorch.org/" target="_blank"><code><img height="20" src="https://raw.githubusercontent.com/pytorch/pytorch/master/docs/source/_static/img/pytorch-logo-dark.png" alt="pytorch" /></code></a>  
   <a href="https://www.qt.io/" target="_blank"><code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt" /></code></a>    
   
   **Study**:<br>
@@ -35,7 +35,7 @@ Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Techno
   <a href="https://www.centos.org/" target="_blank"><code><img height="20" src="https://www.svgrepo.com/show/349314/centos.svg" alt="CentOS" /></code></a>
 
   **Interested**:<br>
-  <a href="https://www.blender.org/" target="_blank"><code><img height="20" src="https://simpleicons.org/icons/blender.svg" alt="blender" /></code></a>  
+  <a href="https://www.blender.org/" target="_blank"><code><img height="20" src="https://simpleicons.org/icons/blender.svg" alt="blender" /></code></a>    
 
 
 <div align="left">  
@@ -54,11 +54,10 @@ C                  19 mins         ▒░░░░░░░░░░░░░░
 
 ---
 
-
 ## Spotify  
 
 <p align="center">
-  <a href="https://open.spotify.com/user/315wgpybdi5ixaz3zlcnjmtcflyy" target="_blank"><img src="https://now-playing-on-spotify.vercel.app/api/spotify?background_color=42f5b011&border_color=00000000" alt="Spotify Now Playing" width="450"/></a>  
+  <a href="https://open.spotify.com/user/315wgpybdi5ixaz3zlcnjmtcflyy" target="_blank"><img src="https://xnne-spotify-playing.vercel.app/api/spotify?background_color=42f5b011&border_color=00000000" alt="Spotify Now Playing" width="450"/></a>    
 </p>
 
 
