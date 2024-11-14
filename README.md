@@ -27,7 +27,7 @@ Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Techno
   
   **Study**:<br>
   <a href="https://vuejs.org/" target="_blank"><code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="Vue.js" /></code></a>  
-  <a href="https://isocpp.org/" target="_blank"><code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++" /></code></a>
+  <a href="https://isocpp.org/" target="_blank"><code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++" /></code></a>  
 
   **OS**:<br>
   <a href="https://www.deepin.org/en/" target="_blank"><code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Deepin_logo.svg" alt="Deepin" /></code></a>
@@ -42,18 +42,17 @@ Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Techno
 
 ---
 
-## Blog List:
+## Blog List:  
 
 - [开源仓库 Commit 规范 | 让 Commit Message 更可爱](https://xnnehang.top/blog/158)  
 - [Deepin 使用 docker 编译 paddlepaddle](https://xnnehang.top/blog/159)
 
+## Spotify
 
 <p align="center">
   <a href="https://open.spotify.com/user/315wgpybdi5ixaz3zlcnjmtcflyy" target="_blank"><img src="https://now-playing-on-spotify.vercel.app/api/spotify?background_color=42f5b011&border_color=00000000" alt="Spotify Now Playing" width="350"/></a>
 </p>
 
-<br>
-<br>
 
 <!--START_SECTION:waka-->
 
