@@ -4,7 +4,7 @@
 
   
 # Hi 👋
-Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Technology, diving into Neural Networks and LLM, CV.       
+Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Technology, diving into deep learning framework.         
 
 ---
 
