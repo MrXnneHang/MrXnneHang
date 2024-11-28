@@ -1,5 +1,5 @@
 <a href="https://github.com/MrXnneHang">   
-  <img align="right" src="http://github-readme-streak-stats.herokuapp.com?user=MrXnneHang&mode=weekly" />        
+  <img align="right" src="http://github-readme-streak-stats.herokuapp.com?user=MrXnneHang&mode=weekly" />          
 </a>
 
   
@@ -8,9 +8,9 @@ Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Techno
 
 ---
 
-- [XnneHang's Blog](http://xnnehang.top/home)  
+- [XnneHang's Blog](https://xnnehang.top/about)
 - Junior student
-- I love reading📚, writing✏️.It's my life.   
+- I love reading📚, writing✏️.It's my life.     
 - I like open source and all interesting things and want to try to do it.  
 - I want to be an interesting person and create something that can be remembered by others.  
 
