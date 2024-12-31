@@ -4,14 +4,14 @@
 
   
 # Hi 👋
-Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Technology, diving into deep learning framework.         
+Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Technology, diving into deep learning framework.           
 
 ---
 
-- [XnneHang's Blog](https://xnnehang.top/about)
-- Junior student
+- [XnneHang's Blog](https://xnnehang.top/about)  
+- Junior student(during final-exam-week)  
 - I love reading📚, writing✏️.It's my life.     
-- I like open source and all interesting things and want to try to do it.  
+- I like open source and all interesting things and want to try to do it.    
 - I want to be an interesting person and create something that can be remembered by others.  
 
 ---
