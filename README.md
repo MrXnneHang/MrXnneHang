@@ -8,7 +8,7 @@ Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Techno
 
 ---
 
-- [XnneHang's Blog](https://xnnehang.top/about)  
+- [XnneHang's Blog](https://xnnehang.top)    
 - Junior student (during holiday)      
 - I love reading📚, writing✏️.It's my life.    
 - I like open source and all interesting things and want to try to do it.      
