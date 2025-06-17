@@ -10,10 +10,9 @@ Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Techno
 
 - [XnneHang's Blog](https://xnnehang.top)      
 - Junior student       
-- I love reading📚, writing✏️.It's my life.    
+- I love reading📚, writing✏️.It's my life.      
 - I like open source and all interesting things and want to try to do it.      
-- I want to be an interesting person and create something that can be remembered by others.  
-- But action first. Moving first. I'm so fucking lazy sometimes.  
+- I want to be an interesting person and create something that can be remembered by others.    
 
 ---
 
@@ -44,7 +43,7 @@ Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Techno
 <!--START_SECTION:waka-->
 
 ```txt
-Python       8 hrs 59 mins   ██████████▒░░░░░░░░░░░░░░   41.18 %
+Python       8 hrs 59 mins   ██████████▒░░░░░░░░░░░░░░   41.18 %  
 Markdown     5 hrs 42 mins   ██████▓░░░░░░░░░░░░░░░░░░   26.18 %
 CSV          2 hrs 16 mins   ██▓░░░░░░░░░░░░░░░░░░░░░░   10.42 %
 TOML         1 hr 12 mins    █▒░░░░░░░░░░░░░░░░░░░░░░░   05.50 %
