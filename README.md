@@ -12,14 +12,15 @@ Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Techno
 - Junior student       
 - I love reading📚, writing✏️.It's my life.      
 - I like open source and all interesting things and want to try to do it.      
-- I want to be an interesting person and create something that can be remembered by others.    
+- I want to be an interesting person and create something that can be remembered by others.
+- Coding is for waifus.  
 
 ---
 
 <div align="left">  
   
   **Language**:<br>  
-  <a href="https://www.python.org/" target="_blank"><code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="python" /></code></a>  
+  <a href="https://www.python.org/" target="_blank"><code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="python" /></code></a>    
   
   **Frame Work**:<br>  
   <a href="https://pytorch.org/" target="_blank"><code><img height="20" src="https://raw.githubusercontent.com/pytorch/pytorch/master/docs/source/_static/img/pytorch-logo-dark.png" alt="pytorch" /></code></a>  
