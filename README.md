@@ -1,21 +1,35 @@
-<a href="https://github.com/MrXnneHang">   
-  <img align="right" src="http://github-readme-streak-stats.herokuapp.com?user=MrXnneHang&mode=weekly" />          
+<!---
+<a href="https://github.com/MrXnneHang">     
+  <img align="right" src="http://github-readme-streak-stats.herokuapp.com?user=MrXnneHang&mode=weekly" />            
 </a>
+-->  
 
+<!-- https://readme-typing-svg.demolab.com/demo/  -->  
+[![Keep it simple](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&vCenter=true&random=false&width=435&height=21&lines=Keep+it+simple!)](https://git.io/typing-svg)  
+<!-- Section : Visitors & last-commit & followers -->
   
-# Hi 👋
-Hi there 👋 I'm a junior student majoring in AI at Xiamen University of Technology, diving into deep learning framework.               
+# About me 
 
----
 
-- [XnneHang's Blog](https://xnnehang.top)      
-- Junior student       
-- I love reading📚, writing✏️.It's my life.      
-- I like open source and all interesting things and want to try to do it.        
-- I want to be an interesting person and create something that can be remembered by others.
-- Coding is for waifus.  
+- [XnneHang's Blog](https://xnnehang.top)        
+- Senior student majored AI and intereted in deep learning framework.
+- I like reading📚, writing✏️.
+- I love all interesting things and want to try to do it.          
+- I want to bring waifus into real world.
 
----
+
+## Language and Tools
+
+![Python](https://img.shields.io/badge/Python-14354C.svg?style=flat-square&logo=python&logoColor=white)  
+![C++](https://img.shields.io/badge/C++-00599C.svg?style=flat-square&logo=c%2B%2B&logoColor=white)
+<br>
+![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-000000.svg?style=flat-square&logo=markdown&logoColor=white)          
+<br/>
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)  
+![windows](https://img.shields.io/badge/windows-0078D6?style=flat-square&logo=windows&logoColor=white)
+<br>
+
 
 <!--START_SECTION:waka-->
 
@@ -28,8 +42,6 @@ Other        17 mins         ▒░░░░░░░░░░░░░░░░
 ```
 
 <!--END_SECTION:waka-->
-
----
 
 ## Spotify  
 
