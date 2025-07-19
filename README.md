@@ -5,10 +5,10 @@
 -->  
 
 <!-- https://readme-typing-svg.demolab.com/demo/  -->    
-[![Keep it simple](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&vCenter=true&random=false&width=435&height=21&lines=Keep+it+simple!)](https://git.io/typing-svg)    
+[![Keep it simple](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&vCenter=true&random=false&width=435&height=21&lines=Keep+it+simple!)](https://git.io/typing-svg)      
 <!-- Section : Visitors & last-commit & followers -->
 
-<img align="right" src="assets/img/112468642_p0_master1200_f.png" width='383px' alt="芙莉莲">  
+<img align="right" src="assets/img/112468642_p0_master1200_f.png" width='373px' alt="芙莉莲">    
 # About me 
 
 - [XnneHang's Blog](https://xnnehang.top)          
