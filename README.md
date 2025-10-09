@@ -32,9 +32,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Python     1 hr 14 mins    ████████████████▒░░░░░░░░   65.87 %
-Markdown   36 mins         ████████░░░░░░░░░░░░░░░░░   32.07 %
-TOML       2 mins          ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.06 %
+Markdown   4 mins          █████████████████████████   100.00 %
 ```
 
 <!--END_SECTION:waka-->  
