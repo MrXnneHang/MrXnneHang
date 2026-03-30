@@ -46,3 +46,5 @@ Makefile     1 hr 25 mins          █▒░░░░░░░░░░░░░
 <p align="center">
   <a href="https://open.spotify.com/user/315wgpybdi5ixaz3zlcnjmtcflyy" target="_blank"><img src="https://xnne-spotify-playing.vercel.app/api/spotify?background_color=42f5b011&border_color=00000000" alt="Spotify Now Playing" width="450"/></a>    
 </p>  
+
+Here is my [cat🐾](https://github.com/xnne-bot) which powered by openclaw.
