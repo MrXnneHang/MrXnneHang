@@ -32,11 +32,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Other        59 mins               ████████████▒░░░░░░░░░░░░   49.41 %
-Python       32 mins               ██████▓░░░░░░░░░░░░░░░░░░   26.80 %
-TOML         20 mins               ████▒░░░░░░░░░░░░░░░░░░░░   17.43 %
-Makefile     4 mins                █░░░░░░░░░░░░░░░░░░░░░░░░   03.94 %
-Markdown     1 min                 ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.31 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->    
