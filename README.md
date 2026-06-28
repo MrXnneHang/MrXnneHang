@@ -3,6 +3,8 @@
 
 <img align="right" src="assets/img/112468642_p0_master1200_f.png" width='350px' alt="芙莉莲">
 
+**Ciallo ～(∠・ω< )⌒★!**
+
 # About me
 
 - [XnneHang's Blog](https://xnnehang.top)
