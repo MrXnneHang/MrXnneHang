@@ -48,7 +48,7 @@ Here is my [cat🐾](https://github.com/xnne-bot) powered by openclaw.
 </td>
 <td width="370" valign="top" align="center">
 
-<img src="assets/img/112468642_p0_master1200_f.png" width="350px" alt="芙莉莲" />
+<img src="https://raw.githubusercontent.com/MrXnneHang/MrXnneHang/master/assets/img/112468642_p0_master1200_f.png" width="350px" alt="芙莉莲" />
 
 </td>
 </tr>
