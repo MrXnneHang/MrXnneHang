@@ -1,0 +1,37 @@
+name: Build README
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    # Every day at UTC 08:00 (Beijing 16:00) — same cadence as the blog deploy
+    - cron: "0 8 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-readme-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Update README with latest blog posts
+        run: python build_readme.py
+
+      - name: Commit and push if changed
+        run: |
+          git diff --quiet && exit 0
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add README.md
+          git commit -m "chore: update recent blog posts"
+          git push
