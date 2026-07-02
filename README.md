@@ -43,9 +43,9 @@ CSS          19 mins               ▒░░░░░░░░░░░░░░
 
 <!-- blog starts -->
 <table>
+<tr><td width="160" valign="top"><a href="https://xnnehang.top/posts/memu-adr0007-ce-duan-perspective/"><img src="https://raw.githubusercontent.com/MrXnneHang/image-hosting/main/memu-adr0007-ce-duan-perspective/cover.png" alt="站在 C 端开发者的角度看 memU 的架构转向 cover" width="160" /></a></td><td valign="top"><a href="https://xnnehang.top/posts/memu-adr0007-ce-duan-perspective/">站在 C 端开发者的角度看 memU 的架构转向</a><br><sub>memU ADR0007 推翻了之前的 LLM mode，从 C 端产品开发者和情感陪伴场景聊我的看法<br>2026-07-02</sub></td></tr>
 <tr><td width="160" valign="top"><a href="https://xnnehang.top/posts/heguang-tongchen/"><img src="https://raw.githubusercontent.com/MrXnneHang/image-hosting/main/heguang-tongchen/cover.png" alt="和光同尘——从韩立说起 cover" width="160" /></a></td><td valign="top"><a href="https://xnnehang.top/posts/heguang-tongchen/">和光同尘——从韩立说起</a><br><sub>从一个和光同尘的视频说起，聊韩立的道心、凡人修仙传的角色塑造、以及去我<br>2026-06-30</sub></td></tr>
 <tr><td width="160" valign="top"><a href="https://xnnehang.top/posts/long-term-memory-graduation-review-and-plan/"><img src="https://raw.githubusercontent.com/MrXnneHang/image-hosting/main/graduation-review/graduation-review-cover.png" alt="去做 Long-Term Memory！AI 本科毕业后的回顾与计划 cover" width="160" /></a></td><td valign="top"><a href="https://xnnehang.top/posts/long-term-memory-graduation-review-and-plan/">去做 Long-Term Memory！AI 本科毕业后的回顾与计划</a><br><sub>一个由《可塑性记忆》开始的、十八岁的梦在二十二岁时成为研究课题的、简单的、平平无奇的故事——以及围绕 Long-Term Memory 的技术方向分析、项目拆解计划和生活展望。<br>2026-06-28</sub></td></tr>
-<tr><td width="160" valign="top"><a href="https://xnnehang.top/posts/agent-framework-exploration/"><img src="https://raw.githubusercontent.com/MrXnneHang/image-hosting/main/agent-framework-exploration/hero-bg-1.png" alt="当主流 Agent 框架无法适配需求时，我们造了什么 cover" width="160" /></a></td><td valign="top"><a href="https://xnnehang.top/posts/agent-framework-exploration/">当主流 Agent 框架无法适配需求时，我们造了什么</a><br><sub>从 AI 陪伴引擎的实践经验出发，对比 LangChain、Dify、LangGraph、Coze 等主流 Agent 框架的局限性，记录我们为实时陪伴场景自建底层框架的核心设计思路与取舍。<br>2026-06-23</sub></td></tr>
 </table>
 <!-- blog ends -->
 
