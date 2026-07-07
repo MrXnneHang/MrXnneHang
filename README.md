@@ -43,9 +43,9 @@ Other        1 hr 13 mins          █░░░░░░░░░░░░░░
 
 <!-- blog starts -->
 <table>
+<tr><td width="160" valign="top"><a href="https://xnnehang.top/posts/gotcha-agent-rules/"><img src="https://raw.githubusercontent.com/MrXnneHang/image-hosting/main/gotcha-agent-rules/cover.jpeg" alt="gotcha.md：给 Agent 一本项目避坑手册 cover" width="160" /></a></td><td valign="top"><a href="https://xnnehang.top/posts/gotcha-agent-rules/">gotcha.md：给 Agent 一本项目避坑手册</a><br><sub>你的 Agent 是不是也经常同一个错误犯好几遍才记住？聊聊 gotcha.md——哪些记忆是 Agent 在 new session 后必须立刻全量具备的？哪些靠后续召回就够了？<br>2026-07-07</sub></td></tr>
 <tr><td width="160" valign="top"><a href="https://xnnehang.top/posts/progressive-disclosure-and-novel-agent/"><img src="https://raw.githubusercontent.com/MrXnneHang/image-hosting/main/progressive-disclosure/cover.png" alt="从 How We Use Skills 开始：什么是渐进式披露？什么是任务拆解？我想了解什么？ cover" width="160" /></a></td><td valign="top"><a href="https://xnnehang.top/posts/progressive-disclosure-and-novel-agent/">从 How We Use Skills 开始：什么是渐进式披露？什么是任务拆解？我想了解什么？</a><br><sub>一篇围绕《How We Use Skills》的阅读笔记——当你无法一次性把所有东西都塞给 Agent 时，你该如何保持它的高效？渐进式披露（Progressive Disclosure）与任务拆解（Task Decomposition）。<br>2026-07-03</sub></td></tr>
 <tr><td width="160" valign="top"><a href="https://xnnehang.top/posts/memu-adr0007-ce-duan-perspective/"><img src="https://raw.githubusercontent.com/MrXnneHang/image-hosting/main/memu-adr0007-ce-duan-perspective/cover.png" alt="站在 C 端开发者的角度看 memU 的架构转向 cover" width="160" /></a></td><td valign="top"><a href="https://xnnehang.top/posts/memu-adr0007-ce-duan-perspective/">站在 C 端开发者的角度看 memU 的架构转向</a><br><sub>memU ADR0007 推翻了之前的 LLM mode，从 C 端产品开发者和情感陪伴场景聊我的看法<br>2026-07-02</sub></td></tr>
-<tr><td width="160" valign="top"><a href="https://xnnehang.top/posts/heguang-tongchen/"><img src="https://raw.githubusercontent.com/MrXnneHang/image-hosting/main/heguang-tongchen/cover.png" alt="和光同尘——从韩立说起 cover" width="160" /></a></td><td valign="top"><a href="https://xnnehang.top/posts/heguang-tongchen/">和光同尘——从韩立说起</a><br><sub>从一个和光同尘的视频说起，聊韩立的道心、凡人修仙传的角色塑造、以及去我<br>2026-06-30</sub></td></tr>
 </table>
 <!-- blog ends -->
 
