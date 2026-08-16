@@ -5,7 +5,7 @@ import time
 from html import escape
 from urllib.request import Request, urlopen
 
-BLOG_API = "https://xnnehang.top/api/posts.json"
+BLOG_API = "https://xnnehang.top/en/api/posts.json"
 SITE_URL = "https://xnnehang.top"
 MAX_POSTS = 3
 COVER_WIDTH = 160
