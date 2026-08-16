@@ -7,7 +7,7 @@
 
 # About me
 
-- [XnneHang's Blog](https://xnnehang.top)
+- [XnneHang's Blog](https://xnnehang.top/en/about/)
 - Intern at NevaMind-AI and interested in Long-Term Memory.
 - I like reading📚, writing✏️ and animes📺!
 - I love all interesting things and want to try to do it.
