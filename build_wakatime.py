@@ -5,6 +5,7 @@ import re
 from urllib.request import Request, urlopen
 
 API_URL = "https://wakatime.com/api/v1/users/current/summaries?range=last_7_days"
+MAX_ITEMS = 5
 
 
 def fetch_summary() -> dict:
@@ -26,7 +27,7 @@ def build_table(summary: dict, key: str, title: str, column: str) -> str:
         return "_No WakaTime activity recorded in the last 7 days._"
 
     rows = []
-    for name, seconds in sorted(totals.items(), key=lambda item: item[1], reverse=True):
+    for name, seconds in sorted(totals.items(), key=lambda item: item[1], reverse=True)[:MAX_ITEMS]:
         minutes = round(seconds / 60)
         hours, minutes = divmod(minutes, 60)
         rows.append(f"| {name} | {hours}h {minutes}m | {seconds / total:.1%} |")
@@ -37,8 +38,8 @@ def main() -> None:
     with open("README.md", encoding="utf-8") as file:
         readme = file.read()
     summary = fetch_summary()
-    languages = build_table(summary, "languages", "### Last 7 days", "Language")
-    workflow = build_table(summary, "editors", "### Current workflow · Last 7 days", "Tool")
+    languages = build_table(summary, "languages", "### Languages · Last 7 days", "Language")
+    workflow = build_table(summary, "editors", "### Workflow · Last 7 days", "Tool")
     readme = re.sub(r"<!-- languages starts -->.*<!-- languages ends -->", f"<!-- languages starts -->\n\n{languages}\n\n<!-- languages ends -->", readme, flags=re.S)
     readme = re.sub(r"<!-- waka starts -->.*<!-- waka ends -->", f"<!-- waka starts -->\n\n{workflow}\n\n<!-- waka ends -->", readme, flags=re.S)
     with open("README.md", "w", encoding="utf-8") as file:
