@@ -37,12 +37,8 @@ def build_pie_svg(title: str, items: list[tuple[str, float]]) -> str:
         minutes = round(seconds / 60)
         hours, minutes = divmod(minutes, 60)
         legend.append(f'<text class="label" x="112" y="{47 + index * 20}" font-size="13"><tspan fill="{colors[index]}">●</tspan> {name} {hours}h {minutes:02}m · {percent:.0f}%</text>')
-    style = '<style>.label,.cat{fill:#24292f;stroke:#24292f}@media(prefers-color-scheme:dark){.label,.cat{fill:#c9d1d9;stroke:#c9d1d9}}</style>'
-    cat = ('<path class="cat" d="M44 68 47 57 52 63Q58 60 64 63L69 57 72 68V76Q72 88 58 89Q44 88 44 76Z" fill="none" stroke-width="1.5"/>'
-           '<circle class="cat" cx="53" cy="74" r="1.5" stroke="none"/><circle class="cat" cx="63" cy="74" r="1.5" stroke="none"/>'
-           '<path class="cat" d="M56 80Q58 82 60 80M48 79l-8-2M48 82l-8 2M68 79l8-2M68 82l8 2" fill="none" stroke-width="1.2" stroke-linecap="round"/>'
-           '<circle cx="49" cy="80" r="2" fill="#f7819f" opacity=".65"/><circle cx="67" cy="80" r="2" fill="#f7819f" opacity=".65"/>')
-    return f'<svg xmlns="http://www.w3.org/2000/svg" width="350" height="125" viewBox="0 0 350 125"><title>{title} · Last 7 days</title>' + style + "".join(slices) + cat + "".join(legend) + "</svg>"
+    style = '<style>.label{fill:#24292f}@media(prefers-color-scheme:dark){.label{fill:#c9d1d9}}</style>'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" width="350" height="125" viewBox="0 0 350 125"><title>{title} · Last 7 days</title>' + style + "".join(slices + legend) + "</svg>"
 
 
 def replace(readme: str, marker: str, content: str) -> str:
