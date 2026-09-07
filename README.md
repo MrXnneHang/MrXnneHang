@@ -13,17 +13,7 @@
 - I love all interesting things and want to try to do it.
 - I want to bring waifus into real world.
 
-## Language and Tools
-
-![Python](https://img.shields.io/badge/Python-14354C.svg?style=flat-square&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C.svg?style=flat-square&logo=c%2B%2B&logoColor=white)
-<br>
-![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
-![Markdown](https://img.shields.io/badge/Markdown-000000.svg?style=flat-square&logo=markdown&logoColor=white)
-<br/>
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![windows](https://img.shields.io/badge/windows-0078D6?style=flat-square&logo=windows&logoColor=white)
-<br>
+<br clear="right"/>
 
 ## Workflow
 
@@ -32,16 +22,6 @@
 ![WakaTime](https://img.shields.io/badge/WakaTime-000?style=flat-square&logo=wakatime&logoColor=white)
 
 <!-- waka starts -->
-
-```mermaid
-pie showData
-    title Current workflow · Last 7 days
-    "Obsidian" : 726
-    "Claude Code" : 716
-    "Codex Exec" : 406
-    "Pi" : 160
-    "Agent" : 2
-```
 
 | Tool | Active time | Share |
 | --- | ---: | ---: |
@@ -52,8 +32,6 @@ pie showData
 | Agent | 0h 2m | 0.1% |
 
 <!-- waka ends -->
-
-<br clear="right"/>
 
 **Recent Blog Posts**
 
