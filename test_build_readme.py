@@ -11,8 +11,10 @@ def test_cards():
     post['description'] = 'A summary with <tags> & details.'
     root = ET.fromstring(blog.build_post_card(post))
     assert post['description'] in ''.join(root.itertext())
-    assert int(root.attrib['height']) > 144
+    assert int(root.attrib['height']) == 180
     assert root.find('{http://www.w3.org/2000/svg}title').text.startswith(post['title'])
+    assert '…' in ''.join(root.itertext())
+    assert 'BLOG JOURNAL' in blog.build_post_card(post, first=True)
     assert 'https://example.com/post' in blog.format_post(post, 1)
     with tempfile.TemporaryDirectory() as directory:
         assets = Path(directory)

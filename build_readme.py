@@ -65,14 +65,15 @@ def cover_data(url: str) -> str:
     return f'data:{mime};base64,' + base64.b64encode(data).decode()
 
 
-def build_post_card(post: dict, cover: str = '') -> str:
+def build_post_card(post: dict, cover: str = '', first: bool = False) -> str:
     # ponytail: character wrapping targets English titles; measured font layout if multilingual posts need it.
-    lines = textwrap.wrap(post['title'], width=52) or ['Untitled']
-    description = textwrap.wrap(post.get('description', ''), width=66)
-    desc_y = 35 + len(lines) * 22 + 8
-    height = max(144, desc_y + len(description) * 18 + 38)
+    lines = textwrap.wrap(post['title'], width=52, max_lines=2, placeholder='…') or ['Untitled']
+    description = textwrap.wrap(post.get('description', ''), width=66, max_lines=2, placeholder='…')
+    desc_y = 102
+    height = 180
+    journal = '<text x="210" y="25" font-size="11" class="date">BLOG JOURNAL</text>' if first else ''
     desc = ''.join(f'<tspan x="210" y="{desc_y + i * 18}">{escape(line)}</tspan>' for i, line in enumerate(description))
-    title = ''.join(f'<tspan x="210" y="{35 + i * 22}">{escape(line)}</tspan>' for i, line in enumerate(lines))
+    title = ''.join(f'<tspan x="210" y="{51 + i * 22}">{escape(line)}</tspan>' for i, line in enumerate(lines))
     image = f'<image x="12" y="12" width="174" height="{height - 24}" preserveAspectRatio="xMidYMid slice" clip-path="url(#cover)" href="{escape(cover, quote=True)}"/>' if cover else ''
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="760" height="{height}" viewBox="0 0 760 {height}" role="img" aria-labelledby="title">
 <title id="title">{escape(post['title'])} · {escape(post['published'])}</title>
@@ -80,7 +81,7 @@ def build_post_card(post: dict, cover: str = '') -> str:
 <style>text{{font-family:Verdana,Arial,sans-serif;fill:#355b65}}.date{{fill:#587580}}@media(prefers-color-scheme:dark){{#water stop:first-child{{stop-color:#182f35}}#water stop:nth-child(2){{stop-color:#20323e}}#water stop:last-child{{stop-color:#302f43}}text{{fill:#dcece9}}.date{{fill:#afc7cf}}}}</style>
 <rect x="1" y="1" width="758" height="{height - 2}" rx="22" fill="url(#water)" stroke="#86b6b5" stroke-opacity=".55"/>
 <rect x="12" y="12" width="174" height="{height - 24}" rx="14" fill="#85bcbc" fill-opacity=".2"/>{image}
-<text font-size="15" font-weight="600">{title}</text>
+{journal}<text font-size="15" font-weight="600">{title}</text>
 <text font-size="12" class="date">{desc}</text>
 <text x="210" y="{height - 24}" font-size="11" class="date">{escape(post['published'])}</text>
 <text x="720" y="{height - 24}" font-size="17" class="date">↗</text>
@@ -101,7 +102,7 @@ def build_blog_section() -> str:
             return ""
         posts = posts[:MAX_POSTS]
         # Fetch and render every card before replacing any existing assets.
-        cards = [build_post_card(p, cover_data(p['coverUrl']) if p.get('coverUrl') else '') for p in posts]
+        cards = [build_post_card(p, cover_data(p['coverUrl']) if p.get('coverUrl') else '', first=i == 0) for i, p in enumerate(posts)]
         rows = [format_post(p, i) for i, p in enumerate(posts, 1)]
         ASSETS.mkdir(exist_ok=True)
         for i, card in enumerate(cards, 1):
