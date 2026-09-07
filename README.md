@@ -8,13 +8,10 @@
 - I love all interesting things and want to try to do it.
 - I want to bring waifus into real world.
 
-<img align="right" src="assets/img/112468642_p0_master1200_f.png" width="350" alt="芙莉莲" />
-
-<img src="assets/stats.svg" alt="Languages and Tools: weekly activity and all-time active hours" width="385" />
-
-<br clear="right" />
-
-**[Blog journal ↗](https://xnnehang.top/)**
+<p>
+<img src="assets/stats.svg" alt="Languages and Tools: weekly activity and all-time active hours" width="385" align="bottom" />
+<img src="assets/img/112468642_p0_master1200_f.png" width="350" alt="芙莉莲" align="bottom" />
+</p>
 
 <!-- blog starts -->
 <table>
