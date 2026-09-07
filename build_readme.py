@@ -1,7 +1,4 @@
-import base64
 import json
-import textwrap
-from pathlib import Path
 import os
 import re
 import time
@@ -11,7 +8,7 @@ from urllib.request import Request, urlopen
 BLOG_API = "https://xnnehang.top/en/api/posts.json"
 SITE_URL = "https://xnnehang.top"
 MAX_POSTS = 3
-ASSETS = Path(__file__).with_name('assets')
+COVER_WIDTH = 160
 
 # Cache-bust param forces Cloudflare / CDN to fetch fresh data each run.
 # Browser-like UA avoids 403s from edge bot-checks.
@@ -47,52 +44,31 @@ def replace_chunk(content: str, marker: str, chunk: str) -> str:
 # Blog posts section
 # ---------------------------------------------------------------------------
 
-def cover_data(url: str) -> str:
-    if not url.startswith('https://'):
-        raise ValueError('Cover URL must use HTTPS')
-    with urlopen(Request(url, headers=FETCH_HEADERS), timeout=20) as response:
-        data = response.read(8 * 1024 * 1024 + 1)
-    if len(data) > 8 * 1024 * 1024:
-        raise ValueError('Cover exceeds 8 MiB')
-    if data.startswith(b'\x89PNG\r\n\x1a\n'):
-        mime = 'image/png'
-    elif data.startswith(b'\xff\xd8\xff'):
-        mime = 'image/jpeg'
-    elif data.startswith(b'RIFF') and data[8:12] == b'WEBP':
-        mime = 'image/webp'
-    else:
-        raise ValueError('Unsupported cover image')
-    return f'data:{mime};base64,' + base64.b64encode(data).decode()
+def format_post(post: dict) -> str:
+    title = escape(post["title"], quote=False)
+    desc = escape(post["description"], quote=False)
+    url = escape(post["url"], quote=True)
+    date = escape(post["published"], quote=False)
+    cover = post.get("coverUrl")
 
+    cover_cell = ""
+    if cover:
+        cover_esc = escape(cover, quote=True)
+        alt = escape(f"{post['title']} cover", quote=True)
+        cover_cell = (
+            f'<td width="{COVER_WIDTH}" valign="top">'
+            f'<a href="{url}">'
+            f'<img src="{cover_esc}" alt="{alt}" width="{COVER_WIDTH}" />'
+            f"</a></td>"
+        )
 
-def build_post_card(post: dict, cover: str = '', first: bool = False) -> str:
-    # ponytail: character wrapping targets English titles; measured font layout if multilingual posts need it.
-    lines = textwrap.wrap(post['title'], width=52, max_lines=2, placeholder='…') or ['Untitled']
-    description = textwrap.wrap(post.get('description', ''), width=66, max_lines=2, placeholder='…')
-    desc_y = 102
-    height = 180
-    journal = '<text x="210" y="25" font-size="11" class="date">BLOG JOURNAL</text>' if first else ''
-    desc = ''.join(f'<tspan x="210" y="{desc_y + i * 18}">{escape(line)}</tspan>' for i, line in enumerate(description))
-    title = ''.join(f'<tspan x="210" y="{51 + i * 22}">{escape(line)}</tspan>' for i, line in enumerate(lines))
-    image = f'<image x="12" y="12" width="174" height="{height - 24}" preserveAspectRatio="xMidYMid slice" clip-path="url(#cover)" href="{escape(cover, quote=True)}"/>' if cover else ''
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="760" height="{height}" viewBox="0 0 760 {height}" role="img" aria-labelledby="title">
-<title id="title">{escape(post['title'])} · {escape(post['published'])}</title>
-<defs><linearGradient id="water" x2="1" y2="1"><stop stop-color="#f1faf6"/><stop offset=".55" stop-color="#edf5fb"/><stop offset="1" stop-color="#f5f0fa"/></linearGradient><clipPath id="cover"><rect x="12" y="12" width="174" height="{height - 24}" rx="14"/></clipPath></defs>
-<style>text{{font-family:Verdana,Arial,sans-serif;fill:#355b65}}.date{{fill:#587580}}@media(prefers-color-scheme:dark){{#water stop:first-child{{stop-color:#182f35}}#water stop:nth-child(2){{stop-color:#20323e}}#water stop:last-child{{stop-color:#302f43}}text{{fill:#dcece9}}.date{{fill:#afc7cf}}}}</style>
-<rect x="1" y="1" width="758" height="{height - 2}" rx="22" fill="url(#water)" stroke="#86b6b5" stroke-opacity=".55"/>
-<rect x="12" y="12" width="174" height="{height - 24}" rx="14" fill="#85bcbc" fill-opacity=".2"/>{image}
-{journal}<text font-size="15" font-weight="600">{title}</text>
-<text font-size="12" class="date">{desc}</text>
-<text x="210" y="{height - 24}" font-size="11" class="date">{escape(post['published'])}</text>
-<text x="720" y="{height - 24}" font-size="17" class="date">↗</text>
-</svg>'''
-
-
-def format_post(post: dict, index: int) -> str:
-    url = post['url']
-    if not url.startswith('https://'):
-        raise ValueError('Post URL must use HTTPS')
-    return f'<a href="{escape(url, quote=True)}"><img src="assets/blog-{index}.svg" alt="{escape(post["title"], quote=True)} · {escape(post["published"], quote=True)}" width="760" /></a>'
+    return (
+        "<tr>"
+        f"{cover_cell}"
+        f'<td valign="top"><a href="{url}">{title}</a><br>'
+        f"<sub>{desc}<br>{date}</sub></td>"
+        "</tr>"
+    )
 
 
 def build_blog_section() -> str:
@@ -100,14 +76,8 @@ def build_blog_section() -> str:
         posts = fetch_json(BLOG_API)
         if not posts:
             return ""
-        posts = posts[:MAX_POSTS]
-        # Fetch and render every card before replacing any existing assets.
-        cards = [build_post_card(p, cover_data(p['coverUrl']) if p.get('coverUrl') else '', first=i == 0) for i, p in enumerate(posts)]
-        rows = [format_post(p, i) for i, p in enumerate(posts, 1)]
-        ASSETS.mkdir(exist_ok=True)
-        for i, card in enumerate(cards, 1):
-            ASSETS.joinpath(f'blog-{i}.svg').write_text(card, encoding='utf-8')
-        return '\n\n'.join(rows)
+        rows = [format_post(p) for p in posts[:MAX_POSTS]]
+        return "<table>\n{}\n</table>".format("\n".join(rows))
     except Exception as exc:
         print(f"[blog] fetch failed: {exc}")
         return ""
