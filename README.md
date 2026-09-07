@@ -22,4 +22,4 @@
 </table>
 <!-- blog ends -->
 
-[🐾 xnne-bot](https://github.com/xnne-bot) · powered by OpenClaw
+Here is my [cat🐾](https://github.com/xnne-bot) powered by openclaw.
