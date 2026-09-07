@@ -13,7 +13,7 @@
 - I love all interesting things and want to try to do it.
 - I want to bring waifus into real world.
 
-## Workflow
+## Languages & Tools
 
 <!-- waka starts -->
 
@@ -22,8 +22,6 @@
 <!-- waka ends -->
 
 <br clear="right"/>
-
-## Languages
 
 <!-- languages starts -->
 

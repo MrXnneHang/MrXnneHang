@@ -1,5 +1,6 @@
 import base64
 import json
+import math
 import os
 import re
 from urllib.request import Request, urlopen
@@ -32,8 +33,12 @@ def build_pie_svg(title: str, items: list[tuple[str, float]]) -> str:
     offset, slices, legend = 0, [], []
     for index, (name, seconds) in enumerate(items):
         percent = seconds / total * 100
-        # Slight overlap removes anti-aliased seams between pie slices.
-        slices.append(f'<circle cx="58" cy="75" r="38" fill="none" stroke="{colors[index]}" stroke-width="18" pathLength="100" stroke-dasharray="{percent + 0.1:.3f} {99.9 - percent:.3f}" stroke-dashoffset="{-offset:.3f}" transform="rotate(-90 58 75)"/>')
+        # Use arcs instead of dashed circles: GitHub's SVG renderer leaves seams in dashes.
+        start = offset / 100 * 6.283185307
+        end = (offset + percent) / 100 * 6.283185307
+        x1, y1 = 58 + 38 * math.sin(start), 75 - 38 * math.cos(start)
+        x2, y2 = 58 + 38 * math.sin(end), 75 - 38 * math.cos(end)
+        slices.append(f'<path d="M 58 75 L {x1:.3f} {y1:.3f} A 38 38 0 {int(percent > 50)} 1 {x2:.3f} {y2:.3f} Z" fill="{colors[index]}" stroke="{colors[index]}" stroke-width="1"/>')
         offset += percent
         minutes = round(seconds / 60)
         hours, minutes = divmod(minutes, 60)
