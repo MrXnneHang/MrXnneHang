@@ -1,9 +1,6 @@
-<!-- https://readme-typing-svg.demolab.com/demo/  -->      
-[![Keep it simple](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&vCenter=true&random=false&width=435&height=21&lines=见贤思齐焉+见不贤而内自省也)](https://git.io/typing-svg)
-
-<a href="https://xnnehang.top/"><img src="assets/blog.svg" alt="✦ XnneHang’s Blog ↗" width="224" height="40" /></a>
-
 <a href="https://xnnehang.top/en/about/"><img src="assets/stats.svg" alt="About XnneHang: NevaMind-AI intern interested in Long-Term Memory, reading, writing and anime. Weekly languages, tools and activity categories, plus all-time WakaTime active hours. Visit my blog." width="760" /></a>
+
+**[读我的博客 ↗](https://xnnehang.top/)**
 
 **Recent Blog Posts**
 

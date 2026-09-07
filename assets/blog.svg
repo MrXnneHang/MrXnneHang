@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="224" height="40" viewBox="0 0 224 40" role="img" aria-labelledby="title">
-<title id="title">✦ XnneHang’s Blog ↗</title>
-<defs><linearGradient id="water" x2="1" y2="1"><stop stop-color="#eef9f5"/><stop offset="1" stop-color="#e9f1fa"/></linearGradient></defs>
-<style>text{fill:#355b65;font-family:Verdana,Arial,sans-serif;font-size:14px;font-weight:600}@media(prefers-color-scheme:dark){#water stop:first-child{stop-color:#182f35}#water stop:last-child{stop-color:#20323e}text{fill:#dcece9}}</style>
-<rect x="1" y="1" width="222" height="38" rx="19" fill="url(#water)" stroke="#86b6b5"/>
-<text x="112" y="25" text-anchor="middle">✦ XnneHang’s Blog ↗</text>
-</svg>
