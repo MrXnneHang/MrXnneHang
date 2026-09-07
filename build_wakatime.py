@@ -44,12 +44,14 @@ def build_workflow_svg(items: list[tuple[str, float]]) -> str:
     offset, slices, legend = 0, [], []
     for index, (name, seconds) in enumerate(items):
         percent = seconds / total * 100
-        slices.append(f'<circle cx="58" cy="75" r="38" fill="none" stroke="{colors[index]}" stroke-width="18" pathLength="100" stroke-dasharray="{percent:.3f} {100 - percent:.3f}" stroke-dashoffset="{-offset:.3f}" transform="rotate(-90 58 75)"/>')
+        # Slight overlap removes anti-aliased seams between pie slices.
+        slices.append(f'<circle cx="58" cy="75" r="38" fill="none" stroke="{colors[index]}" stroke-width="18" pathLength="100" stroke-dasharray="{percent + 0.1:.3f} {99.9 - percent:.3f}" stroke-dashoffset="{-offset:.3f}" transform="rotate(-90 58 75)"/>')
         offset += percent
         minutes = round(seconds / 60)
         hours, minutes = divmod(minutes, 60)
-        legend.append(f'<text x="112" y="{47 + index * 20}" fill="currentColor" font-size="13"><tspan fill="{colors[index]}">●</tspan> {name} {hours}h {minutes:02}m · {percent:.0f}%</text>')
-    return '<svg xmlns="http://www.w3.org/2000/svg" width="350" height="125" viewBox="0 0 350 125">' + "".join(slices + legend) + "</svg>"
+        legend.append(f'<text class="label" x="112" y="{47 + index * 20}" font-size="13"><tspan fill="{colors[index]}">●</tspan> {name} {hours}h {minutes:02}m · {percent:.0f}%</text>')
+    style = '<style>.label{fill:#24292f}@media(prefers-color-scheme:dark){.label{fill:#c9d1d9}}</style>'
+    return '<svg xmlns="http://www.w3.org/2000/svg" width="350" height="125" viewBox="0 0 350 125">' + style + "".join(slices + legend) + "</svg>"
 
 
 def replace(readme: str, marker: str, content: str) -> str:
