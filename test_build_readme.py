@@ -8,7 +8,9 @@ import build_readme as blog
 
 def test_cards():
     post = {'title': 'Memory & <code> ' * 15, 'published': '2026-09-07', 'url': 'https://example.com/post'}
+    post['description'] = 'A summary with <tags> & details.'
     root = ET.fromstring(blog.build_post_card(post))
+    assert post['description'] in ''.join(root.itertext())
     assert int(root.attrib['height']) > 144
     assert root.find('{http://www.w3.org/2000/svg}title').text.startswith(post['title'])
     assert 'https://example.com/post' in blog.format_post(post, 1)
