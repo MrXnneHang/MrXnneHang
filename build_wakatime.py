@@ -15,11 +15,11 @@ def fetch_summary() -> dict:
         return json.load(response)
 
 
-def build_section(summary: dict) -> str:
+def build_table(summary: dict, key: str, title: str, column: str) -> str:
     totals = {}
     for day in summary["data"]:
-        for editor in day.get("editors", []):
-            totals[editor["name"]] = totals.get(editor["name"], 0) + editor["total_seconds"]
+        for item in day.get(key, []):
+            totals[item["name"]] = totals.get(item["name"], 0) + item["total_seconds"]
 
     total = sum(totals.values())
     if not total:
@@ -30,14 +30,17 @@ def build_section(summary: dict) -> str:
         minutes = round(seconds / 60)
         hours, minutes = divmod(minutes, 60)
         rows.append(f"| {name} | {hours}h {minutes}m | {seconds / total:.1%} |")
-    return "\n".join(["### Current workflow · Last 7 days", "", "| Tool | Active time | Share |", "| --- | ---: | ---: |", *rows])
+    return "\n".join([title, "", f"| {column} | Active time | Share |", "| --- | ---: | ---: |", *rows])
 
 
 def main() -> None:
     with open("README.md", encoding="utf-8") as file:
         readme = file.read()
-    section = build_section(fetch_summary())
-    readme = re.sub(r"<!-- waka starts -->.*<!-- waka ends -->", f"<!-- waka starts -->\n\n{section}\n\n<!-- waka ends -->", readme, flags=re.S)
+    summary = fetch_summary()
+    languages = build_table(summary, "languages", "### Last 7 days", "Language")
+    workflow = build_table(summary, "editors", "### Current workflow · Last 7 days", "Tool")
+    readme = re.sub(r"<!-- languages starts -->.*<!-- languages ends -->", f"<!-- languages starts -->\n\n{languages}\n\n<!-- languages ends -->", readme, flags=re.S)
+    readme = re.sub(r"<!-- waka starts -->.*<!-- waka ends -->", f"<!-- waka starts -->\n\n{workflow}\n\n<!-- waka ends -->", readme, flags=re.S)
     with open("README.md", "w", encoding="utf-8") as file:
         file.write(readme)
 
