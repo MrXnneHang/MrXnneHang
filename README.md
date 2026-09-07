@@ -1,4 +1,4 @@
-<img align="right" src="assets/img/112468642_p0_master1200_f.png" width="350" alt="芙莉莲" />
+[![见贤思齐焉，见不贤而内自省也](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&vCenter=true&random=false&width=435&height=21&lines=见贤思齐焉+见不贤而内自省也)](https://git.io/typing-svg)
 
 **Ciallo ～(∠・ω< )⌒★!**
 
@@ -7,6 +7,8 @@
 - I like reading📚, writing✏️ and animes📺!
 - I love all interesting things and want to try to do it.
 - I want to bring waifus into real world.
+
+<img align="right" src="assets/img/112468642_p0_master1200_f.png" width="350" alt="芙莉莲" />
 
 <img src="assets/stats.svg" alt="Languages and Tools: weekly activity and all-time active hours" width="385" />
 
