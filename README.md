@@ -39,16 +39,16 @@ pie showData
     "Obsidian" : 726
     "Claude Code" : 716
     "Codex Exec" : 406
-    "Pi" : 160
+    "Pi" : 177
     "Agent" : 2
 ```
 
 | Tool | Active time | Share |
 | --- | ---: | ---: |
-| Obsidian | 12h 6m | 36.1% |
-| Claude Code | 11h 56m | 35.6% |
-| Codex Exec | 6h 46m | 20.2% |
-| Pi | 2h 40m | 8.0% |
+| Obsidian | 12h 6m | 35.8% |
+| Claude Code | 11h 56m | 35.3% |
+| Codex Exec | 6h 46m | 20.0% |
+| Pi | 2h 57m | 8.7% |
 | Agent | 0h 2m | 0.1% |
 
 <!-- waka ends -->
