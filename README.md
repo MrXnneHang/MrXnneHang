@@ -10,7 +10,7 @@
 
 <p>
 <img src="assets/stats.svg" alt="Languages and Tools: weekly activity and all-time active hours" width="385" align="bottom" />
-<img src="assets/img/112468642_p0_master1200_f.png" width="350" alt="芙莉莲" align="bottom" />
+<img src="assets/img/112468642_p0_master1200_f.png" height="488" alt="芙莉莲" align="bottom" />
 </p>
 
 <!-- blog starts -->
