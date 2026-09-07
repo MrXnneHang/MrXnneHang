@@ -15,14 +15,7 @@
 
 ## Languages & Tools
 
-<p>
-<!-- waka starts -->
-<img src="assets/workflow.svg" alt="Workflow · Last 7 days" width="350" />
-<!-- waka ends -->
-<!-- languages starts -->
-<img src="assets/languages.svg" alt="Languages · Last 7 days" width="350" />
-<!-- languages ends -->
-</p>
+<img src="assets/stats.svg" alt="Languages and Tools: last 7 days of WakaTime activity, top four per chart with hours and percentages" width="350" />
 
 <br clear="right"/>
 

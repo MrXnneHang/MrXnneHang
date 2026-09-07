@@ -23,6 +23,6 @@ jobs:
           git diff --quiet && exit 0
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add README.md assets/workflow.svg assets/languages.svg
+          git add assets/stats.svg
           git commit -m "chore: update workflow stats"
           git push
