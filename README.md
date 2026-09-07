@@ -1,9 +1,7 @@
 <!-- https://readme-typing-svg.demolab.com/demo/  -->      
 [![Keep it simple](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&vCenter=true&random=false&width=435&height=21&lines=见贤思齐焉+见不贤而内自省也)](https://git.io/typing-svg)
 
-<a href="https://xnnehang.top/en/about/"><img src="assets/about.svg" alt="About XnneHang: Intern at NevaMind-AI, interested in Long-Term Memory. Reading, writing, anime and bringing waifus into the real world. Visit my blog." width="760" /></a>
-
-<img src="assets/stats.svg" alt="Languages and Tools: last 7 days of WakaTime activity, top four per chart with hours and percentages" width="350" />
+<a href="https://xnnehang.top/en/about/"><img src="assets/stats.svg" alt="About XnneHang: NevaMind-AI intern interested in Long-Term Memory, reading, writing and anime. Weekly languages, tools and activity categories, plus all-time WakaTime active hours. Visit my blog." width="760" /></a>
 
 **Recent Blog Posts**
 
