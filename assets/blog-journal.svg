@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="60" viewBox="0 0 760 60" role="img" aria-labelledby="title">
+<title id="title">Blog journal · All posts ↗</title>
+<defs><linearGradient id="water" x2="1" y2="1"><stop stop-color="#f1faf6"/><stop offset=".55" stop-color="#edf5fb"/><stop offset="1" stop-color="#f5f0fa"/></linearGradient></defs>
+<style>text{font-family:Verdana,Arial,sans-serif;fill:#355b65}.muted{fill:#587580}@media(prefers-color-scheme:dark){#water stop:first-child{stop-color:#182f35}#water stop:nth-child(2){stop-color:#20323e}#water stop:last-child{stop-color:#302f43}text{fill:#dcece9}.muted{fill:#afc7cf}}</style>
+<rect x="1" y="1" width="758" height="58" rx="22" fill="url(#water)" stroke="#86b6b5" stroke-opacity=".55"/>
+<text x="26" y="37" font-size="17" font-weight="600">Blog journal</text>
+<path d="M190 32Q235 22 280 32T370 32" fill="none" stroke="#85bcbc" stroke-opacity=".35"/>
+<text x="732" y="36" text-anchor="end" font-size="12" class="muted">All posts ↗</text>
+</svg>
