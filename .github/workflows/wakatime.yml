@@ -1,16 +1,28 @@
-name: Waka Readme
+name: Update workflow stats
 
 on:
   workflow_dispatch:
   schedule:
-    # Runs at every 12AM UTC
     - cron: "0 0 * * *"
+
+permissions:
+  contents: write
 
 jobs:
   update-readme:
-    name: Update this repo's README
     runs-on: ubuntu-latest
     steps:
-      - uses: athul/waka-readme@master
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
+          python-version: "3.12"
+      - run: python build_wakatime.py
+        env:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+      - run: |
+          git diff --quiet && exit 0
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add README.md
+          git commit -m "chore: update workflow stats"
+          git push
