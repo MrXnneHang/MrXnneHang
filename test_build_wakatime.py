@@ -8,10 +8,8 @@ def test_card():
     all_time = {'data': {'is_up_to_date': True, 'total_seconds': 72000, 'range': {'start_date': '2024-07-21'}}}
     svg = build_card(summary, all_time)
     root = ET.fromstring(svg)
-    image = root.find('.//{http://www.w3.org/2000/svg}image')
-    assert image.attrib['x'] == '365' and image.attrib['y'] == '18'
-    assert int(image.attrib['height']) + int(image.attrib['y']) == int(root.attrib['height'])
-    assert image.attrib['preserveAspectRatio'] == 'xMidYMax meet'
+    assert root.attrib['width'] == '385'
+    assert root.find('.//{http://www.w3.org/2000/svg}image') is None
     assert 'A &amp; &lt;B&gt;' in svg and '20h 00m' in svg
     for values in ([63, 18, 12, 7], [100]):
         group = ET.fromstring(chart('Languages', [(str(i), v) for i, v in enumerate(values)], 0))

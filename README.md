@@ -1,4 +1,16 @@
-<a href="https://xnnehang.top/en/about/"><img src="assets/stats.svg" alt="About XnneHang: NevaMind-AI intern interested in Long-Term Memory, reading, writing and anime. Weekly languages, tools and activity categories, plus all-time WakaTime active hours. Visit my blog." width="760" /></a>
+<img align="right" src="assets/img/112468642_p0_master1200_f.png" width="350" alt="芙莉莲" />
+
+**Ciallo ～(∠・ω< )⌒★!**
+
+- [XnneHang's Blog](https://xnnehang.top/)
+- Intern at NevaMind-AI and interested in Long-Term Memory.
+- I like reading📚, writing✏️ and animes📺!
+- I love all interesting things and want to try to do it.
+- I want to bring waifus into real world.
+
+<img src="assets/stats.svg" alt="Languages and Tools: weekly activity and all-time active hours" width="385" />
+
+<br clear="right" />
 
 **[Blog journal ↗](https://xnnehang.top/)**
 

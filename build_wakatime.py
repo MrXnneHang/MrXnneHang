@@ -54,47 +54,40 @@ def chart(title, items, y):
 
 
 def build_card(summary, all_time):
-    portrait = ASSETS.joinpath('portrait.txt').read_text(encoding='utf-8')
     categories = totals_for(summary, 'categories')
     total = sum(seconds for _, seconds in categories)
     bars, x = [], 30
     for index, (name, seconds) in enumerate(categories):
         width = seconds / total * 325 if total else 0
-        bars.append(f'<rect x="{x:.4f}" y="550" width="{width:.4f}" height="8" fill="{COLORS[index % len(COLORS)]}"/>')
+        bars.append(f'<rect x="{x:.4f}" y="320" width="{width:.4f}" height="8" fill="{COLORS[index % len(COLORS)]}"/>')
         x += width
-        bars.append(f'<text x="30" y="{580 + index * 19}" class="muted">{escape(name)} · {duration(seconds)} · {seconds / total:.1%}</text>' if total else '')
-    footer_y = max(648, 607 + len(categories) * 19)
+        bars.append(f'<text x="30" y="{350 + index * 19}" class="muted">{escape(name)} · {duration(seconds)} · {seconds / total:.1%}</text>' if total else '')
+    footer_y = max(418, 377 + len(categories) * 19)
     height = footer_y + 54
     data = all_time['data']
     if not data.get('is_up_to_date'):
         raise ValueError('All-time statistics are still being calculated; keeping the existing card')
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="760" height="{height}" viewBox="0 0 760 {height}" role="img" aria-labelledby="title desc">
-<title id="title">XnneHang · About me, Languages &amp; Tools</title>
-<desc id="desc">Weekly WakaTime activity and all-time active time. Chart percentages are within each top four. Frieren illustration fills the right side.</desc>
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="385" height="{height}" viewBox="0 0 385 {height}" role="img" aria-labelledby="title desc">
+<title id="title">Languages &amp; Tools</title>
+<desc id="desc">Weekly WakaTime activity and all-time active time. Chart percentages are within each top four.</desc>
 <defs>
 <linearGradient id="water" x2="1" y2="1"><stop stop-color="#f1faf6"/><stop offset=".55" stop-color="#edf5fb"/><stop offset="1" stop-color="#f5f0fa"/></linearGradient>
-<clipPath id="edge"><rect x="1" y="1" width="758" height="{height - 2}" rx="24"/></clipPath>
+<clipPath id="edge"><rect x="1" y="1" width="383" height="{height - 2}" rx="24"/></clipPath>
 </defs>
 <style>text{{font-family:Verdana,Arial,sans-serif;fill:#355b65}}.heading{{font-size:14px;font-weight:600}}.label{{font-size:12px}}.muted{{font-size:11px;fill:#587580}}.rule{{stroke:#cbdedc}}
 @media(prefers-color-scheme:dark){{#water stop:first-child{{stop-color:#182f35}}#water stop:nth-child(2){{stop-color:#20323e}}#water stop:last-child{{stop-color:#302f43}}text{{fill:#dcece9}}.muted{{fill:#afc7cf}}.rule{{stroke:#405760}}}}</style>
-<rect x="1" y="1" width="758" height="{height - 2}" rx="24" fill="url(#water)" stroke="#86b6b5" stroke-opacity=".55"/>
+<rect x="1" y="1" width="383" height="{height - 2}" rx="24" fill="url(#water)" stroke="#86b6b5" stroke-opacity=".55"/>
 <g clip-path="url(#edge)">
-<g fill="none" stroke="#85bcbc" opacity=".22"><ellipse cx="695" cy="40" rx="115" ry="30"/><ellipse cx="695" cy="40" rx="140" ry="43"/><path d="M-20 {height - 20} Q90 {height - 45} 200 {height - 20} T440 {height - 20}"/></g>
-<image x="365" y="18" width="375" height="{height - 18}" preserveAspectRatio="xMidYMax meet" href="{portrait}"/>
+<g fill="none" stroke="#85bcbc" opacity=".22"><ellipse cx="350" cy="40" rx="115" ry="30"/><ellipse cx="350" cy="40" rx="140" ry="43"/><path d="M-20 {height - 20} Q90 {height - 45} 200 {height - 20} T440 {height - 20}"/></g>
 </g>
-<text x="30" y="36" class="muted">A LITTLE ABOUT ME</text>
-<text x="30" y="73" font-size="23" font-weight="600">Ciallo ～(∠・ω&lt; )⌒★!</text>
-<text x="30" y="102" class="heading">I'm XnneHang.</text>
-<g class="label"><text x="30" y="134">Intern at NevaMind-AI.</text><text x="30" y="156">Interested in Long-Term Memory.</text><text x="30" y="186">Reading, writing, anime — and curiosity.</text><text x="30" y="208">I love interesting things and trying them out.</text><text x="30" y="230">I want to bring waifus into the real world.</text></g>
-<path d="M30 250Q110 245 192 250T355 250" class="rule" fill="none"/>
-<text x="30" y="276" class="heading">Languages &amp; Tools</text><text x="30" y="295" class="muted">LAST 7 DAYS · TOP 4 PER CHART</text>
-{chart('Workflow', totals_for(summary, 'editors'), 322)}
-{chart('Languages', totals_for(summary, 'languages'), 434)}
+<text x="30" y="36" class="heading">Languages &amp; Tools</text><text x="30" y="55" class="muted">LAST 7 DAYS · TOP 4 PER CHART</text>
+{chart('Workflow', totals_for(summary, 'editors'), 82)}
+{chart('Languages', totals_for(summary, 'languages'), 194)}
 {''.join(bars)}
 <path d="M30 {footer_y - 22}H355" class="rule"/>
 <text x="30" y="{footer_y}" class="heading">All-time active time · {duration(data['total_seconds'])}</text>
-<text x="30" y="{footer_y + 19}" class="muted">Since {escape(data['range']['start_date'])} · Visit my blog →</text>
-<text x="30" y="{height - 12}" font-size="9" class="muted">WakaTime · Ring shares within top 4; category shares across all activity.</text>
+<text x="30" y="{footer_y + 19}" class="muted">Since {escape(data['range']['start_date'])}</text>
+<text x="30" y="{height - 12}" font-size="9" class="muted">Ring shares: top 4 · Category shares: all activity.</text>
 </svg>'''
 
 
