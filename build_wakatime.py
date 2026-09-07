@@ -1,5 +1,4 @@
 import base64
-import configparser
 import json
 import os
 import re
@@ -26,13 +25,12 @@ def build_section(summary: dict) -> str:
     if not total:
         return "_No WakaTime activity recorded in the last 7 days._"
 
-    rows, pie = [], ["```mermaid", "pie showData", '    title Current workflow · Last 7 days']
+    rows = []
     for name, seconds in sorted(totals.items(), key=lambda item: item[1], reverse=True):
         minutes = round(seconds / 60)
         hours, minutes = divmod(minutes, 60)
-        pie.append(f'    "{name}" : {round(seconds / 60)}')
         rows.append(f"| {name} | {hours}h {minutes}m | {seconds / total:.1%} |")
-    return "\n".join(pie + ["```", "", "| Tool | Active time | Share |", "| --- | ---: | ---: |", *rows])
+    return "\n".join(["### Current workflow · Last 7 days", "", "| Tool | Active time | Share |", "| --- | ---: | ---: |", *rows])
 
 
 def main() -> None:
