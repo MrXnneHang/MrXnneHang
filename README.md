@@ -13,35 +13,26 @@
 - I love all interesting things and want to try to do it.
 - I want to bring waifus into real world.
 
-<!-- languages starts -->
-
-### Languages · Last 7 days
-
-| Language | Active time | Share |
-| --- | ---: | ---: |
-| Markdown | 19h 5m | 55.8% |
-| Python | 5h 29m | 16.1% |
-| Other | 3h 26m | 10.0% |
-| JSON | 2h 10m | 6.3% |
-| TypeScript | 1h 38m | 4.8% |
-
-<!-- languages ends -->
-
 <!-- waka starts -->
 
-### Workflow · Last 7 days
-
-| Tool | Active time | Share |
-| --- | ---: | ---: |
-| Obsidian | 12h 6m | 35.4% |
-| Claude Code | 11h 56m | 35.0% |
-| Codex Exec | 6h 46m | 19.8% |
-| Pi | 3h 19m | 9.7% |
-| Agent | 0h 2m | 0.1% |
+![Workflow · Last 7 days](assets/workflow.svg)
 
 <!-- waka ends -->
 
 <br clear="right"/>
+
+### Languages · Last 7 days
+
+<!-- languages starts -->
+
+```text
+Markdown     19h 05m  █████████████        63.1%
+Python        5h 30m  ████                 18.2%
+Other         3h 30m  ██                   11.6%
+JSON          2h 10m  █                    7.1%
+```
+
+<!-- languages ends -->
 
 **Recent Blog Posts**
 

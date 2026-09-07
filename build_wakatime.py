@@ -5,7 +5,7 @@ import re
 from urllib.request import Request, urlopen
 
 API_URL = "https://wakatime.com/api/v1/users/current/summaries?range=last_7_days"
-MAX_ITEMS = 5
+MAX_ITEMS = 4
 
 
 def fetch_summary() -> dict:
@@ -16,32 +16,51 @@ def fetch_summary() -> dict:
         return json.load(response)
 
 
-def build_table(summary: dict, key: str, title: str, column: str) -> str:
+def totals_for(summary: dict, key: str) -> list[tuple[str, float]]:
     totals = {}
     for day in summary["data"]:
         for item in day.get(key, []):
             totals[item["name"]] = totals.get(item["name"], 0) + item["total_seconds"]
+    return sorted(totals.items(), key=lambda item: item[1], reverse=True)[:MAX_ITEMS]
 
-    total = sum(totals.values())
+
+def build_languages(items: list[tuple[str, float]]) -> str:
+    total = sum(seconds for _, seconds in items)
     if not total:
         return "_No WakaTime activity recorded in the last 7 days._"
-
     rows = []
-    for name, seconds in sorted(totals.items(), key=lambda item: item[1], reverse=True)[:MAX_ITEMS]:
+    for name, seconds in items:
         minutes = round(seconds / 60)
         hours, minutes = divmod(minutes, 60)
-        rows.append(f"| {name} | {hours}h {minutes}m | {seconds / total:.1%} |")
-    return "\n".join([title, "", f"| {column} | Active time | Share |", "| --- | ---: | ---: |", *rows])
+        rows.append(f"{name:<12} {hours:>2}h {minutes:02}m  {'█' * round(seconds / total * 20):<20} {seconds / total:.1%}")
+    return "```text\n" + "\n".join(rows) + "\n```"
+
+
+def build_workflow_svg(items: list[tuple[str, float]]) -> str:
+    total = sum(seconds for _, seconds in items)
+    if not total:
+        return ""
+    colors = ("#58a6ff", "#f78166", "#d2a8ff", "#3fb950")
+    offset, slices, legend = 0, [], []
+    for index, (name, seconds) in enumerate(items):
+        percent = seconds / total * 100
+        slices.append(f'<circle cx="58" cy="75" r="38" fill="none" stroke="{colors[index]}" stroke-width="18" pathLength="100" stroke-dasharray="{percent:.3f} {100 - percent:.3f}" stroke-dashoffset="{-offset:.3f}" transform="rotate(-90 58 75)"/>')
+        offset += percent
+        legend.append(f'<text x="112" y="{47 + index * 20}" fill="#c9d1d9" font-size="13"><tspan fill="{colors[index]}">●</tspan> {name} {percent:.0f}%</text>')
+    return '<svg xmlns="http://www.w3.org/2000/svg" width="350" height="145" viewBox="0 0 350 145"><rect width="100%" height="100%" rx="6" fill="#0d1117"/><text x="16" y="26" fill="#c9d1d9" font-size="15">Workflow · Last 7 days</text>' + "".join(slices + legend) + "</svg>"
+
+
+def replace(readme: str, marker: str, content: str) -> str:
+    return re.sub(rf"<!-- {marker} starts -->.*<!-- {marker} ends -->", f"<!-- {marker} starts -->\n\n{content}\n\n<!-- {marker} ends -->", readme, flags=re.S)
 
 
 def main() -> None:
     with open("README.md", encoding="utf-8") as file:
         readme = file.read()
     summary = fetch_summary()
-    languages = build_table(summary, "languages", "### Languages · Last 7 days", "Language")
-    workflow = build_table(summary, "editors", "### Workflow · Last 7 days", "Tool")
-    readme = re.sub(r"<!-- languages starts -->.*<!-- languages ends -->", f"<!-- languages starts -->\n\n{languages}\n\n<!-- languages ends -->", readme, flags=re.S)
-    readme = re.sub(r"<!-- waka starts -->.*<!-- waka ends -->", f"<!-- waka starts -->\n\n{workflow}\n\n<!-- waka ends -->", readme, flags=re.S)
+    with open("assets/workflow.svg", "w", encoding="utf-8") as file:
+        file.write(build_workflow_svg(totals_for(summary, "editors")))
+    readme = replace(readme, "languages", build_languages(totals_for(summary, "languages")))
     with open("README.md", "w", encoding="utf-8") as file:
         file.write(readme)
 
