@@ -13,29 +13,33 @@
 - I love all interesting things and want to try to do it.
 - I want to bring waifus into real world.
 
-## Language and Tools
+## Workflow
 
-![Python](https://img.shields.io/badge/Python-14354C.svg?style=flat-square&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C.svg?style=flat-square&logo=c%2B%2B&logoColor=white)
-<br>
-![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
-![Markdown](https://img.shields.io/badge/Markdown-000000.svg?style=flat-square&logo=markdown&logoColor=white)
-<br/>
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![windows](https://img.shields.io/badge/windows-0078D6?style=flat-square&logo=windows&logoColor=white)
-<br>
+![Pi](https://img.shields.io/badge/Pi-161B22?style=flat-square&logo=terminal&logoColor=white)
+![Claude Code](https://img.shields.io/badge/Claude_Code-CC785C?style=flat-square&logo=anthropic&logoColor=white)
+![WakaTime](https://img.shields.io/badge/WakaTime-000?style=flat-square&logo=wakatime&logoColor=white)
 
-<!--START_SECTION:waka-->
+<!-- waka starts -->
 
-```txt
-Markdown     16 hrs 54 mins        █████████████▓░░░░░░░░░░░   54.23 %
-Python       6 hrs 46 mins         █████▒░░░░░░░░░░░░░░░░░░░   21.74 %
-Other        2 hrs 24 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   07.73 %
-JSON         2 hrs 7 mins          █▓░░░░░░░░░░░░░░░░░░░░░░░   06.80 %
-JavaScript   48 mins               ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.62 %
+```mermaid
+pie showData
+    title Current workflow · Last 7 days
+    "Obsidian" : 726
+    "Claude Code" : 716
+    "Codex Exec" : 406
+    "Pi" : 160
+    "Agent" : 2
 ```
 
-<!--END_SECTION:waka-->
+| Tool | Active time | Share |
+| --- | ---: | ---: |
+| Obsidian | 12h 6m | 36.1% |
+| Claude Code | 11h 56m | 35.6% |
+| Codex Exec | 6h 46m | 20.2% |
+| Pi | 2h 40m | 8.0% |
+| Agent | 0h 2m | 0.1% |
+
+<!-- waka ends -->
 
 <br clear="right"/>
 
