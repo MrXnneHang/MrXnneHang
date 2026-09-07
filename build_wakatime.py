@@ -80,7 +80,7 @@ def build_card(summary, all_time):
 <rect x="1" y="1" width="758" height="{height - 2}" rx="24" fill="url(#water)" stroke="#86b6b5" stroke-opacity=".55"/>
 <g clip-path="url(#edge)">
 <g fill="none" stroke="#85bcbc" opacity=".22"><ellipse cx="695" cy="40" rx="115" ry="30"/><ellipse cx="695" cy="40" rx="140" ry="43"/><path d="M-20 {height - 20} Q90 {height - 45} 200 {height - 20} T440 {height - 20}"/></g>
-<image x="365" y="18" width="375" height="{height - 36}" preserveAspectRatio="xMidYMid meet" href="{portrait}"/>
+<image x="365" y="18" width="375" height="{height - 18}" preserveAspectRatio="xMidYMax meet" href="{portrait}"/>
 </g>
 <text x="30" y="36" class="muted">A LITTLE ABOUT ME</text>
 <text x="30" y="73" font-size="23" font-weight="600">Ciallo ～(∠・ω&lt; )⌒★!</text>
