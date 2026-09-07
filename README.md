@@ -15,19 +15,16 @@
 
 ## Languages & Tools
 
+<p>
 <!-- waka starts -->
-
-![Workflow · Last 7 days](assets/workflow.svg)
-
+<img src="assets/workflow.svg" alt="Workflow · Last 7 days" width="350" />
 <!-- waka ends -->
+<!-- languages starts -->
+<img src="assets/languages.svg" alt="Languages · Last 7 days" width="350" />
+<!-- languages ends -->
+</p>
 
 <br clear="right"/>
-
-<!-- languages starts -->
-
-![Languages · Last 7 days](assets/languages.svg)
-
-<!-- languages ends -->
 
 **Recent Blog Posts**
 
