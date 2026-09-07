@@ -24,19 +24,7 @@ def totals_for(summary: dict, key: str) -> list[tuple[str, float]]:
     return sorted(totals.items(), key=lambda item: item[1], reverse=True)[:MAX_ITEMS]
 
 
-def build_languages(items: list[tuple[str, float]]) -> str:
-    total = sum(seconds for _, seconds in items)
-    if not total:
-        return "_No WakaTime activity recorded in the last 7 days._"
-    rows = []
-    for name, seconds in items:
-        minutes = round(seconds / 60)
-        hours, minutes = divmod(minutes, 60)
-        rows.append(f"{name:<12} {hours:>2}h {minutes:02}m  {'█' * round(seconds / total * 20):<20} {seconds / total:.1%}")
-    return "```text\n" + "\n".join(rows) + "\n```"
-
-
-def build_workflow_svg(items: list[tuple[str, float]]) -> str:
+def build_pie_svg(title: str, items: list[tuple[str, float]]) -> str:
     total = sum(seconds for _, seconds in items)
     if not total:
         return ""
@@ -51,7 +39,7 @@ def build_workflow_svg(items: list[tuple[str, float]]) -> str:
         hours, minutes = divmod(minutes, 60)
         legend.append(f'<text class="label" x="112" y="{47 + index * 20}" font-size="13"><tspan fill="{colors[index]}">●</tspan> {name} {hours}h {minutes:02}m · {percent:.0f}%</text>')
     style = '<style>.label{fill:#24292f}@media(prefers-color-scheme:dark){.label{fill:#c9d1d9}}</style>'
-    return '<svg xmlns="http://www.w3.org/2000/svg" width="350" height="125" viewBox="0 0 350 125">' + style + "".join(slices + legend) + "</svg>"
+    return f'<svg xmlns="http://www.w3.org/2000/svg" width="350" height="125" viewBox="0 0 350 125"><title>{title} · Last 7 days</title>' + style + "".join(slices + legend) + "</svg>"
 
 
 def replace(readme: str, marker: str, content: str) -> str:
@@ -63,8 +51,9 @@ def main() -> None:
         readme = file.read()
     summary = fetch_summary()
     with open("assets/workflow.svg", "w", encoding="utf-8") as file:
-        file.write(build_workflow_svg(totals_for(summary, "editors")))
-    readme = replace(readme, "languages", build_languages(totals_for(summary, "languages")))
+        file.write(build_pie_svg("Workflow", totals_for(summary, "editors")))
+    with open("assets/languages.svg", "w", encoding="utf-8") as file:
+        file.write(build_pie_svg("Languages", totals_for(summary, "languages")))
     with open("README.md", "w", encoding="utf-8") as file:
         file.write(readme)
 

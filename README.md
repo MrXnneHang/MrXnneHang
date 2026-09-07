@@ -23,16 +23,11 @@
 
 <br clear="right"/>
 
-### Languages · Last 7 days
+## Languages
 
 <!-- languages starts -->
 
-```text
-Markdown     19h 08m  █████████████        63.1%
-Python        5h 31m  ████                 18.2%
-Other         3h 30m  ██                   11.6%
-JSON          2h 10m  █                    7.1%
-```
+![Languages · Last 7 days](assets/languages.svg)
 
 <!-- languages ends -->
 
