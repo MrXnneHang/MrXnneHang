@@ -33,12 +33,12 @@ def build_pie_svg(title: str, items: list[tuple[str, float]]) -> str:
     offset, slices, legend = 0, [], []
     for index, (name, seconds) in enumerate(items):
         percent = seconds / total * 100
-        # Use arcs instead of dashed circles: GitHub's SVG renderer leaves seams in dashes.
+        # Arc paths retain the donut shape; the 0.1% overlap hides renderer seams.
         start = offset / 100 * 6.283185307
-        end = (offset + percent) / 100 * 6.283185307
+        end = (offset + percent + 0.1) / 100 * 6.283185307
         x1, y1 = 58 + 38 * math.sin(start), 75 - 38 * math.cos(start)
         x2, y2 = 58 + 38 * math.sin(end), 75 - 38 * math.cos(end)
-        slices.append(f'<path d="M 58 75 L {x1:.3f} {y1:.3f} A 38 38 0 {int(percent > 50)} 1 {x2:.3f} {y2:.3f} Z" fill="{colors[index]}" stroke="{colors[index]}" stroke-width="1"/>')
+        slices.append(f'<path d="M {x1:.3f} {y1:.3f} A 38 38 0 {int(percent > 50)} 1 {x2:.3f} {y2:.3f}" fill="none" stroke="{colors[index]}" stroke-width="18"/>')
         offset += percent
         minutes = round(seconds / 60)
         hours, minutes = divmod(minutes, 60)
