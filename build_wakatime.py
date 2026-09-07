@@ -43,8 +43,9 @@ def build_pie_svg(title: str, items: list[tuple[str, float]]) -> str:
         minutes = round(seconds / 60)
         hours, minutes = divmod(minutes, 60)
         legend.append(f'<text class="label" x="112" y="{47 + index * 20}" font-size="13"><tspan fill="{colors[index]}">●</tspan> {name} {hours}h {minutes:02}m · {percent:.0f}%</text>')
-    style = '<style>.label{fill:#24292f}@media(prefers-color-scheme:dark){.label{fill:#c9d1d9}}</style>'
-    return f'<svg xmlns="http://www.w3.org/2000/svg" width="350" height="125" viewBox="0 0 350 125"><title>{title} · Last 7 days</title>' + style + "".join(slices + legend) + "</svg>"
+    style = '<style>.label{fill:#24292f}.hole{fill:#fff}@media(prefers-color-scheme:dark){.label{fill:#c9d1d9}.hole{fill:#0d1117}}</style>'
+    hole = '<circle class="hole" cx="58" cy="75" r="3"/>'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" width="350" height="125" viewBox="0 0 350 125"><title>{title} · Last 7 days</title>' + style + "".join(slices) + hole + "".join(legend) + "</svg>"
 
 
 def replace(readme: str, marker: str, content: str) -> str:
