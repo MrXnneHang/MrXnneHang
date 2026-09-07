@@ -1,5 +1,6 @@
 import base64
 import json
+import math
 import os
 from html import escape
 from pathlib import Path
@@ -33,7 +34,18 @@ def chart(title: str, items: list[tuple[str, float]], y: int) -> str:
     offset = 0
     for index, (name, seconds) in enumerate(items):
         percent = seconds / total * 100
-        parts.append(f'<circle cx="67" cy="69" r="33" fill="none" stroke="{COLORS[index]}" stroke-width="13" pathLength="100" stroke-dasharray="{percent:.6f} {100 - percent:.6f}" stroke-dashoffset="{-offset:.6f}" transform="rotate(-90 67 69)"/>')
+        # Two arcs per edge also handle a single item occupying the full ring.
+        def point(radius, angle):
+            angle = math.radians(angle * 3.6 - 90)
+            return f'{67 + radius * math.cos(angle):.6f} {69 + radius * math.sin(angle):.6f}'
+
+        start, middle, end = offset, offset + percent / 2, offset + percent
+        parts.append(
+            f'<path class="segment" fill="{COLORS[index]}" d="M {point(39.5, start)} '
+            f'A 39.5 39.5 0 0 1 {point(39.5, middle)} A 39.5 39.5 0 0 1 {point(39.5, end)} '
+            f'L {point(26.5, end)} A 26.5 26.5 0 0 0 {point(26.5, middle)} '
+            f'A 26.5 26.5 0 0 0 {point(26.5, start)} Z"/>'
+        )
         offset += percent
         hours, minutes = divmod(round(seconds / 60), 60)
         row_y = 25 + index * 29
