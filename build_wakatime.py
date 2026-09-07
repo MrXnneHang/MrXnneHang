@@ -1,6 +1,5 @@
 import base64
 import json
-import math
 import os
 import re
 from urllib.request import Request, urlopen
@@ -33,12 +32,7 @@ def build_pie_svg(title: str, items: list[tuple[str, float]]) -> str:
     offset, slices, legend = 0, [], []
     for index, (name, seconds) in enumerate(items):
         percent = seconds / total * 100
-        # Arc paths retain the donut shape; the 0.1% overlap hides renderer seams.
-        start = offset / 100 * 6.283185307
-        end = (offset + percent + 0.1) / 100 * 6.283185307
-        x1, y1 = 58 + 38 * math.sin(start), 75 - 38 * math.cos(start)
-        x2, y2 = 58 + 38 * math.sin(end), 75 - 38 * math.cos(end)
-        slices.append(f'<path d="M {x1:.3f} {y1:.3f} A 38 38 0 {int(percent > 50)} 1 {x2:.3f} {y2:.3f}" fill="none" stroke="{colors[index]}" stroke-width="18"/>')
+        slices.append(f'<circle cx="58" cy="75" r="38" fill="none" stroke="{colors[index]}" stroke-width="18" pathLength="100" stroke-dasharray="{percent:.3f} {100 - percent:.3f}" stroke-dashoffset="{-offset:.3f}" transform="rotate(-90 58 75)"/>')
         offset += percent
         minutes = round(seconds / 60)
         hours, minutes = divmod(minutes, 60)
