@@ -1,23 +1,9 @@
 <!-- https://readme-typing-svg.demolab.com/demo/  -->      
 [![Keep it simple](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&vCenter=true&random=false&width=435&height=21&lines=见贤思齐焉+见不贤而内自省也)](https://git.io/typing-svg)
 
-<img align="right" src="assets/img/112468642_p0_master1200_f.png" width='350px' alt="芙莉莲">
-
-**Ciallo ～(∠・ω< )⌒★!**
-
-# About me
-
-- [XnneHang's Blog](https://xnnehang.top/en/about/)
-- Intern at NevaMind-AI and interested in Long-Term Memory.
-- I like reading📚, writing✏️ and animes📺!
-- I love all interesting things and want to try to do it.
-- I want to bring waifus into real world.
-
-## Languages & Tools
+<a href="https://xnnehang.top/en/about/"><img src="assets/about.svg" alt="About XnneHang: Intern at NevaMind-AI, interested in Long-Term Memory. Reading, writing, anime and bringing waifus into the real world. Visit my blog." width="760" /></a>
 
 <img src="assets/stats.svg" alt="Languages and Tools: last 7 days of WakaTime activity, top four per chart with hours and percentages" width="350" />
-
-<br clear="right"/>
 
 **Recent Blog Posts**
 
