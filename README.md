@@ -19,6 +19,29 @@
 
 <!-- languages starts -->
 
+### Last 7 days
+
+| Language | Active time | Share |
+| --- | ---: | ---: |
+| Markdown | 19h 5m | 55.9% |
+| Python | 5h 29m | 16.1% |
+| Other | 3h 22m | 9.9% |
+| JSON | 2h 10m | 6.3% |
+| TypeScript | 1h 38m | 4.8% |
+| JavaScript | 0h 49m | 2.4% |
+| Makefile | 0h 26m | 1.3% |
+| CSS | 0h 18m | 0.9% |
+| YAML | 0h 12m | 0.6% |
+| HTML | 0h 11m | 0.5% |
+| Astro | 0h 7m | 0.3% |
+| Image (png) | 0h 7m | 0.3% |
+| Rust | 0h 4m | 0.2% |
+| TOML | 0h 4m | 0.2% |
+| Batchfile | 0h 2m | 0.1% |
+| Docker | 0h 1m | 0.1% |
+| Text | 0h 1m | 0.0% |
+| PowerShell | 0h 0m | 0.0% |
+
 <!-- languages ends -->
 
 ## Workflow
@@ -29,12 +52,14 @@
 
 <!-- waka starts -->
 
+### Current workflow · Last 7 days
+
 | Tool | Active time | Share |
 | --- | ---: | ---: |
-| Obsidian | 12h 6m | 35.8% |
-| Claude Code | 11h 56m | 35.3% |
-| Codex Exec | 6h 46m | 20.0% |
-| Pi | 2h 57m | 8.7% |
+| Obsidian | 12h 6m | 35.5% |
+| Claude Code | 11h 56m | 35.0% |
+| Codex Exec | 6h 46m | 19.9% |
+| Pi | 3h 16m | 9.6% |
 | Agent | 0h 2m | 0.1% |
 
 <!-- waka ends -->
