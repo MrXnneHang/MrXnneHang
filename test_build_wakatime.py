@@ -9,8 +9,9 @@ def test_card():
     svg = build_card(summary, all_time)
     root = ET.fromstring(svg)
     image = root.find('.//{http://www.w3.org/2000/svg}image')
-    assert image.attrib['y'] == '0' and image.attrib['height'] == root.attrib['height']
-    assert image.attrib['preserveAspectRatio'] == 'xMidYMid slice'
+    assert image.attrib['x'] == '365' and image.attrib['y'] == '18'
+    assert int(image.attrib['height']) == int(root.attrib['height']) - 36
+    assert image.attrib['preserveAspectRatio'] == 'xMidYMid meet'
     assert 'A &amp; &lt;B&gt;' in svg and '20h 00m' in svg
     for values in ([63, 18, 12, 7], [100]):
         group = ET.fromstring(chart('Languages', [(str(i), v) for i, v in enumerate(values)], 0))
