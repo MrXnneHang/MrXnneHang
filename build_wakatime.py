@@ -46,8 +46,10 @@ def build_workflow_svg(items: list[tuple[str, float]]) -> str:
         percent = seconds / total * 100
         slices.append(f'<circle cx="58" cy="75" r="38" fill="none" stroke="{colors[index]}" stroke-width="18" pathLength="100" stroke-dasharray="{percent:.3f} {100 - percent:.3f}" stroke-dashoffset="{-offset:.3f}" transform="rotate(-90 58 75)"/>')
         offset += percent
-        legend.append(f'<text x="112" y="{47 + index * 20}" fill="#c9d1d9" font-size="13"><tspan fill="{colors[index]}">●</tspan> {name} {percent:.0f}%</text>')
-    return '<svg xmlns="http://www.w3.org/2000/svg" width="350" height="145" viewBox="0 0 350 145"><rect width="100%" height="100%" rx="6" fill="#0d1117"/><text x="16" y="26" fill="#c9d1d9" font-size="15">Workflow · Last 7 days</text>' + "".join(slices + legend) + "</svg>"
+        minutes = round(seconds / 60)
+        hours, minutes = divmod(minutes, 60)
+        legend.append(f'<text x="112" y="{47 + index * 20}" fill="currentColor" font-size="13"><tspan fill="{colors[index]}">●</tspan> {name} {hours}h {minutes:02}m · {percent:.0f}%</text>')
+    return '<svg xmlns="http://www.w3.org/2000/svg" width="350" height="125" viewBox="0 0 350 125">' + "".join(slices + legend) + "</svg>"
 
 
 def replace(readme: str, marker: str, content: str) -> str:

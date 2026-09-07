@@ -13,6 +13,8 @@
 - I love all interesting things and want to try to do it.
 - I want to bring waifus into real world.
 
+## Workflow
+
 <!-- waka starts -->
 
 ![Workflow · Last 7 days](assets/workflow.svg)
@@ -26,7 +28,7 @@
 <!-- languages starts -->
 
 ```text
-Markdown     19h 05m  █████████████        63.1%
+Markdown     19h 08m  █████████████        63.1%
 Python        5h 30m  ████                 18.2%
 Other         3h 30m  ██                   11.6%
 JSON          2h 10m  █                    7.1%
